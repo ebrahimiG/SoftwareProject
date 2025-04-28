@@ -1,2 +1,2 @@
 # SoftwareProject
-This is a site about recommending movies and series to users using artificial intelligence.
+This is a website about recommending movies and series to users using AI.
