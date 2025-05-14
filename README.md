@@ -1,17 +1,28 @@
 # DaraMovie Project
-This is a website about recommending movies and series to users using AI.
+_a paragraph of defining the project_ 
 
-# The Process
-__1.__ __communication__ : what is the project about?
+## The Process
+__1. communication__ : 
+   - what is the project about?
+   - research
 
-__2.__ __modeling__ : make sketch and wireframes and prototype
+__2. modeling__ :
+   - sketch
+   - wirefram
+   - prototype
 
-__3.__ __design__ : use the prototype for designing
+__3. design__ : 
+   - use the prototype for designing
 
-__4.__ __development__ : start the coding and testing
+__4. development__ : 
+   - coding
+   - frontend
+   - backend
+   - testing
 
-__5.__ __implement__ : making the website online
+__5. implement__ : 
+   - put the website online
 
-# Resources
+## Resources
 
 - [__using github pages__](https://youtu.be/p1QU3kLFPdg?si=DvzfZDYHBBaC8Ra9)
