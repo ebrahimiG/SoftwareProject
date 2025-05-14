@@ -6,7 +6,7 @@ This is a website about recommending movies and series to users using AI.
 
 🔴 modeling : make sketch and wireframes and prototype
 
-🖋️ design : use the prototype for designin
+🖋️ design : use the prototype for designing
 
 🛠️ development : start the coding and testing
 
