@@ -1,5 +1,5 @@
 # DaraMovie Project
-_a paragraph of defining the project_ 
+This is a movie and series review website that also uses __artificial intelligence__ to provide users with a better experience.
 
 ## The Process
 __1. communication__ : 
