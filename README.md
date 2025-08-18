@@ -3,20 +3,20 @@ This is a movie and series review and recommendation website that also uses 🤖
 this repo is about building and reporting the process.
 i'm going to use html and css for the frontend and django for the backend.
 
-🌐 When it's complete, I'll post the site address here: 
+🌐 When it's complete, I'll post the website address here : 
 
-## The Process
+## The Process 
 🗣️ __1. communication__: 
-   - what is the project about?
-   - research
+   - ✅ what is the project about?
+   - ✅ research
 
 🖌️ __2. modeling__:
-   - sketch
-   - wirefram
-   - prototype
+   - ✅ sketch 
+   - ✅ wirefram 
+   - ✅ prototype 
 
 🖋️ __3. design__ : 
-   - use the prototype for designing  --> i'm here right now!📍
+   - 📍 use the prototype for designing  
 
 🛠️ __4. development__ : 
    - coding
