@@ -24,6 +24,13 @@ this repo is about building and reporting the process.
 💾 __5. implement__ : 
    - put the website online
 
+## Features
+- 🎯 Personalized movie recommendations
+- 🔍 Advanced search and filtering
+- 🧠 AI integration for smart suggestions
+- 📱 Responsive design for mobile and desktop
+
+
 ## Resources
 
 - [__using github pages__](https://youtu.be/p1QU3kLFPdg?si=DvzfZDYHBBaC8Ra9)
