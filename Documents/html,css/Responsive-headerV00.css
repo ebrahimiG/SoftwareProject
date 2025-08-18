@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* defaults */
+*{
+    /* what is this mean?? */
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+
+}
+/* overall */
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #141414;
+}
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+}
+
+
+/* NAVBAR */
+.navbar{
+    background-color: #FEFE60;
+    color: #141414;
+    height: 70px;
+}
+
+.navbar a{
+    /* background-color: black; */
+    color: #141414;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover{
+    border-bottom: #141414 2px solid;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+
+.container{
+    /* background-color: lightcoral; */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: auto;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
