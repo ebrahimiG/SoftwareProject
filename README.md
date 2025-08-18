@@ -27,3 +27,4 @@ this repo is about building and reporting the process.
 ## Resources
 
 - [__using github pages__](https://youtu.be/p1QU3kLFPdg?si=DvzfZDYHBBaC8Ra9)
+- [__responsive website__](https://youtu.be/p0bGHP-PXD4?si=TNr0rckQQAAF28vh)
