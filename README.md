@@ -1,5 +1,5 @@
 # DaraMovie Project (Archive) 🎞️
-This is a movie and series review website that also uses 🤖 __artificial intelligence__ to provide users with a better experience.
+This is a movie and series review and recommendation website that also uses 🤖 __artificial intelligence__ to provide users with a better experience.
 this repo is about building and reporting the process.
 
 ## The Process
