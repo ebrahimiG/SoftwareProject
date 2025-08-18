@@ -13,7 +13,7 @@ this repo is about building and reporting the process.
    - prototype
 
 🖋️ __3. design__ : 
-   - use the prototype for designing  
+   - use the prototype for designing  --> i'm here right now!📍
 
 🛠️ __4. development__ : 
    - coding
