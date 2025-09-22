@@ -1,0 +1,55 @@
+/* using font Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* BASICS */
+:root{
+    --primary-color:#047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color:#5cb85c;
+    --error-color:#d9534f;
+}
+
+/* reset */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2{
+    /* make the font little less bold */
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+code,pre{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
