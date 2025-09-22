@@ -8,6 +8,7 @@
 
 .navbar{
     height: 70px;
+    margin-top: 10px;
 }
 .navbar ul{
     display: flex;
@@ -22,6 +23,28 @@
 .nav a:hover{
     border-bottom: solid 1px #eae4e4;
 }
+.nav{
+    position: relative;
+    padding-bottom: 10px;
+}
 
+.dropdown-content{
+    display: none;
+    
+}
+.dropdown-content ul{
+    display: block;
+    margin: 5px;
+}
+.dropdown-content li{
+    width: 150px;
+    padding: 10px 10px 10px 2px;
+}   
+.cat:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
 
 

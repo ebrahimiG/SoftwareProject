@@ -16,16 +16,28 @@
 </head>
     
 <body>
-
+    <!-- background-color for navbar? -->
     <!-- navbar -->
     <div class="navbar">
         <div class="container flex">
-            <a href="index.html"><h1 class="logo"><span>D</span>aramovie</h1></a>
+            <a href="index.html"><h1 class="logo"><span>D</span>aramovie <i class="fas fa-film"></i></h1></a>
+
+
             <nav>
                 <ul>
-                    <li class="nav"><a href="#">Category</a></li>
-                    <li class="nav"><a href="#">Search</a></li>
-                    <li class="nav"><a href="#">Filmyar</a></li>
+                    <li class="nav cat"><a href="#">Category <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Drama</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Romance <i class="fas fa-caret-right"></i></a></li>
+                                <li><a href="#">Crime</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav"><a href="#">Search <i class="fas fa-search"></i></a></li>
+                    <li class="nav"><a href="#">Filmyar <i class="fas fa-robot"></i></a></li>
                 </ul>
             </nav>
         </div>
