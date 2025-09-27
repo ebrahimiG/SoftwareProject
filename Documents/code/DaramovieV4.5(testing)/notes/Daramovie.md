@@ -186,6 +186,8 @@ Than we can use top, bottom, and ... for the `<div class="child">` and it will c
 
 `z-index` helps us to defined which element be on top of the other elements.
 
+We need a navbar with sub menu, like when we hover on category, we want it shows the sub menu of category.
+
 
 
 
