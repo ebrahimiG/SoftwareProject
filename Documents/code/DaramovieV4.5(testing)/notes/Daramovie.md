@@ -7,7 +7,7 @@ Users can have profile in the website.
 ## starting 
 I use font __Cinzel__ for logo and __Raleway__ for the rest of the site(from google fonts) <br>
 and I use __font awesome__ for icons.
-And than I make the project folder like this:
+And Then I make the project folder like this:
 * 📁 Daramovie
     * index.html
     * about_us.html
@@ -182,7 +182,7 @@ And when we put the `right: 0;`, the element will go to right of the screen with
 `position: absolute;` we have two `<div>`s one is `<div class="parent";>` and inside of it we have `<div class="child">`. <br>
 If we want to change the position of the `<div class="child">` based on the `<div class="parent";>`, here how we do it : <br>
 First the `<div class="parent";>` must have `position: relative;` and `<div class="child">` must have `position: absolute;`.<br>
-Than we can use top, bottom, and ... for the `<div class="child">` and it will change it's position based on the `<div class="parent";>`. If the `<div class="parent";>` does't have `position: relative;` the `<div class="child">` will change position based on the screen. <br>
+Then we can use top, bottom, and ... for the `<div class="child">` and it will change it's position based on the `<div class="parent";>`. If the `<div class="parent";>` does't have `position: relative;` the `<div class="child">` will change position based on the screen. <br>
 
 `z-index` helps us to defined which element be on top of the other elements.
 
@@ -232,7 +232,7 @@ html :
 ```
 So it's just like before (almost). We go on the `<li>` that we want to give it the sub menu. In this case it's __Categories__. <br>
 We give the `<li>` of __Categories__, class="cat" so we can use it in the css.
-Than after `</a>` and before the `</li>`, we make `<div class="dropdown-cat">`. and inside it we have another `<ul>` with its `<li>`s. <br>
+Then after `</a>` and before the `</li>`, we make `<div class="dropdown-cat">`. and inside it we have another `<ul>` with its `<li>`s. <br>
 now it's time for the css : 
 ```
 /* Reset */
@@ -308,11 +308,41 @@ a{
 /*******************************************/
 ```
 So first of all, we make the `.cat{position: relative;}` because we want to use __position absolute__ for the __dropdown-cat__. <br>
-Than we make the `dropdown-cat{display: none;}`, so it will hide the __dropdown-cat__ when the __Categories__ not hovered.<br>
-Than we start to define the __dropdown-cat__ when the __Categories__ or `.cat` is hovered. First `display: block`, so it make the __dropdown-cat__ visible. Than we use `position: absolute;` so we change the position of the __dropdown-cat__ based on the __cat__ (cat was `position: relative;`). <br>
+Then we make the `dropdown-cat{display: none;}`, so it will hide the __dropdown-cat__ when the __Categories__ not hovered.<br>
+Then we start to define the __dropdown-cat__ when the __Categories__ or `.cat` is hovered. First `display: block`, so it make the __dropdown-cat__ visible. Then we use `position: absolute;` so we change the position of the __dropdown-cat__ based on the __cat__ (cat was `position: relative;`). <br>
 `top: 100%;` will position the __dropdown-cat__ under the `.cat` and `left: 0;` so it starts from the leftside. And we give it the background-color same as the navbar backgorund. <br>
 `.dropdown-cat ul{display: block;}` is because we want the list items to be in a column not in a row. And give some space to the list items using `.dropdown-cat li{padding: 10px 0}`. <br>
-But in the __Daramovie__ we make the sub menu little bit different. : 
+But in the __Daramovie__ we want the under line to have a animation so instead of `border-bottom` we use `::after`. : 
+```
+nav a {
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--yellow-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+nav a:hover::after {
+  /* the width of the underline blew the navbar links (it can be 1.5 and 2) */
+  transform: scaleX(1); 
+}
+```
+First we give the all the links in the `<nav>` __position relative__ because we want to use __position absolute__ in the `::after`. <br>
+When we use `::after` or `::before`, we need __content__. In this case __content__ should be empty because we want just a simple line not any text. <br>
+Then we use __position absolute__. using `bottom: 0;` so the line place under the link. <br>
+We can think of it like we making a div below the link but we want it to look like a line so we give it `height: 1px;` like we defining the thickness of the line. Then `background-color` like we defining the color of the line. <br>
+`transform; scaleX(0)` : this is the width of the line. 0 means no width. This is exactly what we want when the link is not hovered. `scaleX` means width through the horizontal direction and `scaleY` is about vertical direction.  <br>
+`transform-origin: center;` : means where we want the line start showing up. it can be from __left__ or __right__ too. <br>
+`transition: transform 0.3s ease;` : means how long it will take for the `transform` to show its animation. <br>
+And then when we hover : <br>
+We want to line grow from 0 width to 1 width (100% of the links width). we use `transform scaleX(1)`.
 
 
 

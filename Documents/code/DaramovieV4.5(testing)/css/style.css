@@ -25,18 +25,15 @@
 .navbar .flex{
     justify-content: space-between;
 }
-/* .nav a{
-    transition: 1s;
-}
+/*
 .nav a:hover{
     border-bottom: solid 1px #eae4e4;
 } */
- .nav a {
-  position: relative;
-  text-decoration: none;
-}
 
-.nav a::after {
+nav a {
+  position: relative;
+}
+nav a::after {
   content: "";
   position: absolute;
   right: 0;
@@ -48,18 +45,16 @@
   transform-origin: center;
   transition: transform 0.3s ease;
 }
-
-.nav a:hover::after {
+nav a:hover::after {
     /* the width of the underline blew the navbar links (it can be 1.5 and 2) */
   transform: scaleX(1); 
 }
 
 
-.nav{
+.cat{
     position: relative;
     padding-bottom: 10px;
 }
-
 .dropdown-content{
     display: none;
 }
@@ -79,7 +74,5 @@
     background-color: #1b1a1a;
     border: 1px solid #262525;
 }
-.test p{
-    padding-top: 100px;
-}
+
 
