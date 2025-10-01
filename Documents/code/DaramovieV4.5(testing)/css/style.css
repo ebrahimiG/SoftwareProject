@@ -7,12 +7,12 @@
 }
 
 .navbar{
-    position: fixed;
+    position: sticky;
     left: 10px;
     right: 10px;
-    top : 10px;
+    top : 5px;
     height: 70px;
-    background-color: #252323;
+    background-color: var(--background-main);
     z-index: 10;
 }
 .navbar ul{
@@ -73,6 +73,24 @@ nav a:hover::after {
     top: 100%;
     background-color: #1b1a1a;
     border: 1px solid #262525;
+}
+
+
+/* showcase */
+.showcase{
+    margin: 20px 5px;
+    padding: 10px 0;
+    background-color: var(--background-main);
+}
+
+.poster img{
+    height: 100%;
+    width: 100%;
+}
+.poster{
+    width: 200px;
+    height: 320px;
+    padding: 20px 0;
 }
 
 

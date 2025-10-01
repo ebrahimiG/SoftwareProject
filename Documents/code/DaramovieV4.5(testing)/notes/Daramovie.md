@@ -344,6 +344,8 @@ We can think of it like we making a div below the link but we want it to look li
 And then when we hover : <br>
 We want to line grow from 0 width to 1 width (100% of the links width). we use `transform scaleX(1)`.
 
+### -- SHOWCASE --
+Now we want to build the showcase.
 
 
 
