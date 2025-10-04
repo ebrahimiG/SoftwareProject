@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
-    <link rel="stylesheet" href="css/basics.css">
     <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/basics.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- font awesome for icons -->
@@ -20,14 +20,14 @@
     <!-- navbar -->
     <div class="navbar">
         <div class="container flex">
-            <a href="index.html"><h1 class="logo"><span>D</span>aramovie <i class="fas fa-film"></i></h1></a>
+            <a  class="logo" href="index.html"><h1><span class="yellow-letter">D</span>aramovie <i class="fas fa-film"></i></h1></a>
 
             <nav>
                 <ul>
                     <li class=" cat"><a href="category.html">Category <i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-content">
                             <ul>
-                                <li><a href="#">Action</a></li>
+                                <li><a class="a-underline" href="#">Action</a></li>
                                 <li><a href="#">Drama</a></li>
                                 <li><a href="#">History</a></li>
                                 <li><a href="#">Romance</a></li>
@@ -38,20 +38,45 @@
                     </li>
                     <li><a href="advanced_search.html">Search <i class="fas fa-search"></i></a></li>
                     <li><a href="filmyar.html">Filmyar <i class="fas fa-robot"></i></a></li>
+                    <li><a href="filmyar.html">Sign In <i class="fas fa-user"></i></a></li>
                 </ul>
             </nav>
         </div>
     </div> 
     
-    <!-- showcase -->
-     <div class="showcase">
-        <div class="container">
-            <h1 class="title">Top 10 this week</h1>
-            <div class="poster">
-                <img src="img/Movie poster/wp11717725-interstellar-poster-wallpapers.jpg" alt="poster">
+    <!-- give the title a yellow underline -->
+    <!-- showcase-top10 -->
+    <section class="top10-sec mar">
+        <div class="container grid-ver">
+
+            <div class="title-sec">
+                <h1>
+                    Top <span class="yellow-letter">10</span> This Week <i class="fas fa-fire"></i>
+                </h1>
+            </div>
+
+            <div class="main-sec">
+                <div class="poster">
+                    <img src="img/Movie poster/wp11717725-interstellar-poster-wallpapers.jpg" alt="">
+                </div>
+                <div class="poster">
+                    <img src="img/Movie poster/wp13923223-top-gun-rooster-wallpapers.jpg" alt="">
+                </div>
+                <div class="poster">
+                    <img src="img/Movie poster/wp14270956-the-godfather-poster-wallpapers.png" alt="">
+                </div>
+                <div class="poster">
+                    <img src="img/Movie poster/wp14585444-a-quiet-place-the-road-ahead-wallpapers.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="footer-sec">
+                <a class="btn" href="#">More</a>
             </div>
         </div>
-     </div>
+
+    </section>
+    
 
       
 </body>

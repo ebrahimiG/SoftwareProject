@@ -3,6 +3,7 @@
 
 /* colors */
 :root{
+    --yellow-color-rgb: rgb(221,221,16);
     --yellow-color:#DDDD10;
     --white-color:#eae4e4;
     --background-main: #252323;
@@ -37,4 +38,26 @@ a{
 }
 ul{
     list-style-type: none;
+}
+
+/* underline for the links */
+a{
+  position: relative;
+  padding: 10px;
+}
+a::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--yellow-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+a:hover::after{
+ /* the width of the underline blew the navbar links (it can be 1.5 and 2) */
+  transform: scaleX(1); 
 }

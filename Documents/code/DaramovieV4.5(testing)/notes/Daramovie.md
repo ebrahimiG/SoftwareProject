@@ -115,16 +115,43 @@ a{
 ul{
     list-style-type: none;
 }
+
+
+/* underline for the links */
+a{
+  position: relative;
+}
+a::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--yellow-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+a:hover::after{
+ /* the width of the underline blew the navbar links (it can be 1.5 and 2) */
+  transform: scaleX(1); 
+}
 ```
+So instead of defining the underline for every link, all links will have the under line as default. and if a link should't have an underline (like the logo), we can define it for that link by `.ExmapleLinkClass:hover::after{transform: scaleX(0);}` 
 ## style.css
 Here is the main css file.
 
 ### -- NAVBAR --
 I style the navbar like this :
+all the links have underline as default. It is defined in [basics](#basicscss). but we dont want our logo have underline when it's hoverd so we do this : `.logo:hover::after{transform: scaleX(0);}`
 ```
 /* navbar */
 .logo{
     font-family: "Cinzel Decorative", serif;
+}
+.logo:hover::after{
+    transform: scaleX(0);
 }
 .logo span{
     color:var(--yellow-color);
@@ -313,6 +340,7 @@ Then we start to define the __dropdown-cat__ when the __Categories__ or `.cat` i
 `top: 100%;` will position the __dropdown-cat__ under the `.cat` and `left: 0;` so it starts from the leftside. And we give it the background-color same as the navbar backgorund. <br>
 `.dropdown-cat ul{display: block;}` is because we want the list items to be in a column not in a row. And give some space to the list items using `.dropdown-cat li{padding: 10px 0}`. <br>
 But in the __Daramovie__ we want the under line to have a animation so instead of `border-bottom` we use `::after`. : 
+> ⚠️ sinces we define the underline for all of the links in basics, we don't need this code, but i don't remove it for it's explanation.
 ```
 nav a {
   position: relative;

@@ -2,8 +2,11 @@
 .logo{
     font-family: "Cinzel Decorative", serif;
 }
-.logo span{
-    color:var(--yellow-color);
+.logo:hover::after{
+    transform: scaleX(0);
+}
+.yellow-letter{
+    color: var(--yellow-color);
 }
 
 .navbar{
@@ -14,40 +17,17 @@
     height: 70px;
     background-color: var(--background-main);
     z-index: 10;
+    margin: 0 10px;
 }
 .navbar ul{
     display: flex;
 }
 .navbar nav a{
-    padding: 10px;
+    /* padding: 10px; */
     margin: 0 5px;
 }
 .navbar .flex{
     justify-content: space-between;
-}
-/*
-.nav a:hover{
-    border-bottom: solid 1px #eae4e4;
-} */
-
-nav a {
-  position: relative;
-}
-nav a::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 1px;
-  width: 100%;
-  background-color: var(--yellow-color);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-nav a:hover::after {
-    /* the width of the underline blew the navbar links (it can be 1.5 and 2) */
-  transform: scaleX(1); 
 }
 
 
@@ -77,20 +57,11 @@ nav a:hover::after {
 
 
 /* showcase */
-.showcase{
-    margin: 20px 5px;
-    padding: 10px 0;
+.top10-sec{
+    height: 430px;
     background-color: var(--background-main);
-}
-
-.poster img{
-    height: 100%;
-    width: 100%;
-}
-.poster{
-    width: 200px;
-    height: 320px;
-    padding: 20px 0;
+    border: solid 1px var(--yellow-color);
+    border-radius: 2px;
 }
 
 
