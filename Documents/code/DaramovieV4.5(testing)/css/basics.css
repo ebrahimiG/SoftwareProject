@@ -20,7 +20,7 @@ body{
     background-color: #1b1a1a;
     color:var(--white-color);
     font-family: "Raleway", sans-serif;
-    height: 900px;
+    padding-bottom: 300px;
 
 }
 

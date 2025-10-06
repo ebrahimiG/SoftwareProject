@@ -74,6 +74,67 @@ _container flex_ are two [utility classes](utilities.md) that defined in _utilit
         </div>
     </div>  
 ```
+
+### -- SHOWCASE --
+Now we want to build the showcase. <br>
+Here is about top 10 section and how it is made. <br>
+In this section we have __title__, __main__ and the __footer__. So we use [grid-var](utilities.md) to put this element in a column.<br>
+We want to title to be in the top center, main have some posters and footer to have a more button. <br>
+For the main part we want four posters that will show the name of the film while hovering. We using `<a>` so it will have the yellow under line as default. <br>
+This is the html: 
+```
+    <!-- showcase-top10 -->
+    <section class="top10-sec sec mar">
+        <div class="container grid-ver">
+            <!-- title of the seciton -->
+            <div class="title-sec">
+                <h1>
+                    Top <span class="yellow-letter">10</span> This Week <i class="fas fa-fire"></i>
+                </h1>
+            </div>
+            <!-- main of the section -->
+            <div class="main-sec">
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="img/Movie poster/wp11717725-interstellar-poster-wallpapers.jpg" alt="">
+                        <div class="poster-overlay">
+                            <h3>Interstellar</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="img/Movie poster/wp14585444-a-quiet-place-the-road-ahead-wallpapers.jpg" alt="">
+                        <div class="poster-overlay">
+                            <h3>A Quite Place</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="img/Movie poster/wp14270956-the-godfather-poster-wallpapers.png" alt="">
+                        <div class="poster-overlay">
+                            <h3>The Godfather</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="img/Movie poster/wp7248999-2021-batman-wallpapers.jpg" alt="">
+                        <div class="poster-overlay">
+                            <h3>The Batman 2021</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>      
+            <!-- footer of the section -->
+            <div class="footer-sec">
+                <a class="btn" href="#">More</a>
+            </div>
+        </div>
+    </section>
+```
+
 ## basics.css
 Before I go any further, I want to work on __basics.html__. <br>
 This file contains basics settings for the project. We put a default value for the elements like `<a>`, `<ul>`, `<h1>`, `<img>` and...
@@ -139,6 +200,7 @@ a:hover::after{
 }
 ```
 So instead of defining the underline for every link, all links will have the under line as default. and if a link should't have an underline (like the logo), we can define it for that link by `.ExmapleLinkClass:hover::after{transform: scaleX(0);}` 
+
 ## style.css
 Here is the main css file.
 
@@ -372,8 +434,21 @@ We can think of it like we making a div below the link but we want it to look li
 And then when we hover : <br>
 We want to line grow from 0 width to 1 width (100% of the links width). we use `transform scaleX(1)`.
 
-### -- SHOWCASE --
-Now we want to build the showcase.
+### -- SHOWCASE -- 
+There's nothing for the showcane in the __style.css__. Everything is in the __utilities.css__. <br>
+So here's the link for the [utilities](utilities.md). But here is some details : <br>
+`.sec` : defining the background of the section. <br>
+`.grid-var` : we want the three main part(title, main and footer) to be in a column. <br>
+`.title-sec` : put the title in the center.<br>
+`main-sec` : put the posters in a row. <br>
+`footer-sec` : put the button in the center.<br>
+`poster` : poster include the __img__ and __title of the movie__. We use flex to put everything in the center.<br>
+`.poster a` : the `<a>` has a default padding so we define it to be 0.<br>
+`.poster:hover` : When hover, the poster will go up a little bit.<br>
+`.poster-link` : We make this __position: relative;__ so we could use __position: absolute;__ in the overlay.<br>
+`.poster-overlay` : this is the __div__ that conains the movies title. We make the __position absolute__ so we can change the position inside the poster. We want this to appear after hoverin. So when its not hoverd, the __opacity__ is 0 and when it's hoverd, the __opacity__ is 1. But we can give the __background-color__ an alpha value, so it will be transparent after hovering. 
+
+
 
 
 
