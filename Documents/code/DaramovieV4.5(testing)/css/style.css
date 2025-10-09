@@ -57,6 +57,17 @@
 }
 
 
+/* Filmyar */
+.filmyar .flex{
+    justify-content: space-between;
+}
+.filmyar-poster{
+    height: 90%;
+    width: 500px;
+}
+
+
+
 
 
 
