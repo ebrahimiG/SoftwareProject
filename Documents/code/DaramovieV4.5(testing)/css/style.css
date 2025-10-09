@@ -58,12 +58,29 @@
 
 
 /* Filmyar */
+.filmyar{
+    height: 600px;
+}
 .filmyar .flex{
     justify-content: space-between;
+    align-items: start;
 }
 .filmyar-poster{
     height: 90%;
-    width: 500px;
+    width: 550px;
+}
+.filmyar-poster img{
+    border-radius: 2px;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
+}
+.filmyar-card{
+    height: 50%;
+    width: 450px;
+    line-height: 25px;
+
+}
+.filmyar-card .grid-var{
+    grid-template-rows: 40% 20% 40%;
 }
 
 

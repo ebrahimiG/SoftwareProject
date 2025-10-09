@@ -110,7 +110,7 @@
 
 /* margin */
 .mar{
-    margin: 50px 10px;
+    margin: 70px 10px;
 }
 
 /* botton */
@@ -132,4 +132,8 @@
 /* we don't want the underline for the link */
 .btn:hover::after{
     transform: scaleX(0);   
+}
+
+.lead{
+    font-size: 18px;
 }
