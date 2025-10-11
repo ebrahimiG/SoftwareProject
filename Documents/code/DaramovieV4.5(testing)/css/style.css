@@ -58,9 +58,7 @@
 
 
 /* Filmyar */
-.filmyar{
-    height: 600px;
-}
+
 .filmyar .flex{
     justify-content: space-between;
     align-items: start;
