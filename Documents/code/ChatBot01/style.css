@@ -7,8 +7,7 @@
 body{
     font-family: "Raleway", sans-serif;
     /* background-color using CSS Gradient website */
-    background-image: linear-gradient(90.2deg, rgba(1,47,95,1) -0.4%, rgba(56,141,217,1) 106.1%);
-    color: #333;
+    background-image: radial-gradient(circle,rgba(120, 110, 23, 1) 0%, rgba(128, 114, 23, 1) 10%, rgba(221, 221, 16, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +15,11 @@ body{
     height: 100vh;
 }
 
+
 .chat-container{
-    width: 400px;
-    height: 600px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 500px;
+    height: 650px;
+    background: rgba(17, 3, 3, 0.082);
     /* i don't know this one */
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -36,6 +36,10 @@ header{
     padding: 15px;
     text-align: center;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: "Cinzel Decorative", serif;
+}
+.yellow{
+    color: #dddd10;
 }
 
 .chat-box{
@@ -55,14 +59,16 @@ header{
 }
 
 .user-message{
-    background-color: rgba(0, 120, 255, 0.8);
+        background-color: #020c17;
+
     color: #fff;
     align-self: flex-end;
     margin-left: auto;
 }
 
+
 .bot-message{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.747);
     color: #333;
     align-self: flex-start;
 }
@@ -75,24 +81,35 @@ header{
 
 #user-input{
     flex: 1;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     background-color: rgba(255, 255, 255, 0.9);
     outline: none;
     border-radius: 8px;
+    height: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+#user-input:hover{
+    transform: scale(1.03);
 }
 
 #send-btn{
-    background-color: #0078ff;
+    background-color: #020c17;
     color: #fff;
+    font-size: large;
     border: none;
     padding: 10px 15px;
     margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
 }
 #send-btn:hover{
-    background-color: #005fcc;
+    background-color: #dddd10;
+    color: #020c17;
 }
 

@@ -66,6 +66,7 @@
 .filmyar-poster{
     height: 90%;
     width: 550px;
+    border-radius: 10px;
 }
 .filmyar-poster img{
     border-radius: 2px;
@@ -81,6 +82,11 @@
     grid-template-rows: 40% 20% 40%;
 }
 
+
+.navigation{
+    display: flex;
+    gap: 20px;
+}
 
 
 

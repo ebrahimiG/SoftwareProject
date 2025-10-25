@@ -20,7 +20,7 @@ body{
     background-color: #1b1a1a;
     color:var(--white-color);
     font-family: "Raleway", sans-serif;
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
 
 }
 
@@ -60,4 +60,20 @@ a::after{
 a:hover::after{
  /* the width of the underline blew the navbar links (it can be 1.5 and 2) */
   transform: scaleX(1); 
+}
+
+footer{
+    background-color: rgb(20, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.social a:hover::after{
+    transform: scale(0);
+}
+.social a:hover{
+    color: #DDDD10;
 }
