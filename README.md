@@ -20,8 +20,8 @@ i'm going to use html and css for the frontend and django for the backend.
 
 🛠️ __4. development__ : 
    - ✅coding
-   - 📍 frontend
-   - backend
+   - ✅ frontend
+   - 📍 backend
    - testing
 
 💾 __5. implement__ : 
