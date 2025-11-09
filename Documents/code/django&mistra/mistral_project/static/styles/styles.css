@@ -1,0 +1,17 @@
+body{
+    background-color: bisque;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chat{
+    text-align: center;
+    color: #333;
+    background-color: #acacac;
+    padding: 10px;
+    max-width: 1100px;
+    line-height: 1.6;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
