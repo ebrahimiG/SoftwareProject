@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static "styles/utilities.css" %}">
+    <link rel="stylesheet" href="{% static "styles/basics.css" %}">
+    <link rel="stylesheet" href="{% static "styles/styles.css" %}">
+
+    <!-- font awesome for icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <title>Daramovie</title>
+</head>
+    
+<body>
+    <!-- about us in footer -->
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <a  class="logo" href="{% url "home" %}"><h1><i class="fas fa-film"></i> <span class="yellow-letter">D</span>aramovie </h1></a>
+            <nav>
+                <ul>
+                    <li class=" cat"><a href="{% url "home" %}">Category <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a class="a-underline" href="{% url "home" %}">Action</a></li>
+                                <li><a href="{% url "home" %}">Drama</a></li>
+                                <li><a href="{% url "home" %}">History</a></li>
+                                <li><a href="{% url "home" %}">Romance</a></li>
+                                <li><a href="{% url "home" %}">Crime</a></li>
+                                <li><a href="{% url "home" %}">More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="{% url "home" %}">Search <i class="fas fa-search"></i></a></li>
+                    <li><a href="{% url "filmyar" %}">Filmyar <i class="fas fa-robot"></i></a></li>
+                    <li><a href="{% url "home" %}">Sign In <i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div> 
+    
+
+    <!-- showcase-top10 -->
+    <section class="top10-sec sec mar">
+        <div class="container grid-ver">
+            <!-- title of the seciton -->
+            <div class="title-sec">
+                <h1>
+                    Top <span class="yellow-letter">10</span> This Week <i class="fas fa-fire"></i>
+                </h1>
+            </div>
+            <!-- main of the section -->
+            <div class="main-sec">
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/wp11717725-interstellar-poster-wallpapers.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>Interstellar</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/wp14585444-a-quiet-place-the-road-ahead-wallpapers.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>A Quite Place</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/wp14270956-the-godfather-poster-wallpapers.png" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>The Godfather</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/wp7248999-2021-batman-wallpapers.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>The Batman 2021</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>      
+            <!-- footer of the section -->
+            <div class="footer-sec">
+                <a class="btn" href="{% url "home" %}">More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- i need a better poster for filmyar -->
+    <section class="filmyar mar">
+        <div class="container flex">
+            <div class="filmyar-poster">
+                <img src="{% static "images/some-pic/edit_this.png" %}" alt="">
+            </div>
+            <div class="filmyar-card grid-ver">
+                <h1><span class="yellow-letter">F</span>ilmyar Is Here To Help You</h1>
+                <p class="lead">
+                    Filmyar is Daramovie's built-in AI that helps you discover, explore, and fall in love with cinema. Smart, stylish, and always in sync with your taste. It's like having a personal film curator at your side.
+                </p>
+                <div class="footer-sec">
+                    <a href="{% url "filmyar" %}" class="btn">Start Talking</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog section -->
+    <section class="blog sec mar">
+        <div class="container grid-ver">
+            <!-- title of the seciton -->
+            <div class="title-sec">
+                <h1>
+                    <span class="yellow-letter">B</span>logs <i class="fa fa-clapperboard"></i>
+                </h1>
+            </div>
+            <!-- main of the section -->
+            <div class="main-sec">
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/blog1.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>Netfelix This Season</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/blog2.jpeg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>A Drama List</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/blog3.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>Making Joker</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="{% url "home" %}" class="poster-link">
+                        <img src="{% static "images/Movie_poster/blog4.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>For The Weekend</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>      
+            <!-- footer of the section -->
+            <div class="footer-sec">
+                <a class="btn" href="{% url "home" %}">More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="navigation">
+            <div class="aboutus">
+                <a href="{% url "home" %}">About Us</a>
+            </div>
+            <div class="contactus">
+                <a href="{% url "home" %}">Contact Us</a>
+            </div>
+            <div class="faq">
+                <a href="{% url "home" %}">FAQ</a>
+            </div>
+            <div class="shoping">
+                <a href="{% url "home" %}">Subscription</a>
+            </div>
+        </div>
+        <div class="social">
+                <a href="{% url "home" %}"><i class="fab fa-github fa-2x"></i></a>
+                <a href="{% url "home" %}"><i class="fab fa-telegram fa-2x"></i></a>
+                <a href="{% url "home" %}"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="{% url "home" %}"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="{% url "home" %}"><i class="fas fa-phone fa-2x"></i></a>
+        </div>
+        
+    </footer>
+
+
+
+    
+    
+
+      
+</body>
+</html> 

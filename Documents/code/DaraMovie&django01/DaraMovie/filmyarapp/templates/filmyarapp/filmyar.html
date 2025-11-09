@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "styles/filmyar.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chatbot 01</title>
+</head>
+<body>
+    <div class="backhome">
+        <a href="{% url "home" %}">Back Home <i class="fas fa-long-arrow-right"></i></a>
+    </div>
+    <div class="chat-container">
+        <header>
+            <h1><span class="yellow">D</span>arayar <i class="fas fa-robot"></i> </h1>
+        </header>
+        <div id="chat-box" class="chat-box">
+            <div class="message user-message">Hi</div>
+            <div class="message bot-message">Hi</div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" autocomplete="off" placeholder="Type Here..."/>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="{% static "js/scripts.js" %}"></script>
+    
+</body>
+</html>
