@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/filmyar.css' %}">
+  <title>Filmyar</title>
+</head>
+<body>
+  <a href="{% url 'home' %}" class="backhome">Back home</a>
+
+  <div class="chat-container">
+    <header>
+      <h1>filmyar</h1>
+    </header>
+
+    <div id="chat-box" class="chat-box">
+      {% for m in messages %}
+        <div class="message {% if m.role == 'user' %}user-message{% else %}bot-message{% endif %}">
+          {{ m.text }}
+        </div>
+      {% empty %}
+        <div class="message bot-message">Say hi to start.</div>
+      {% endfor %}
+    </div>
+
+    <div class="input-area">
+      <form method="post">
+        {% csrf_token %}
+        <input type="text" name="message" id="user-input" placeholder="type your message..." autocomplete="off">
+        <button id="send-btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
