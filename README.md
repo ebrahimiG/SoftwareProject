@@ -1,7 +1,7 @@
 # DaraMovie Project (Archive) 🎞️
 This is a movie and series review and recommendation website that also uses 🤖 __artificial intelligence__ to provide users with a better experience.
 this repo is about building and reporting the process. you can take a look at the Documetns. 
-i'm going to use html and css for the frontend and django for the backend.
+I'm going to use html and css for the frontend and django for the backend.
 
 🌐 When it's complete, I'll post the website address here : 
 
@@ -38,3 +38,7 @@ i'm going to use html and css for the frontend and django for the backend.
 
 - [__using github pages__](https://youtu.be/p1QU3kLFPdg?si=DvzfZDYHBBaC8Ra9)
 - [__responsive website__](https://youtu.be/p0bGHP-PXD4?si=TNr0rckQQAAF28vh)
+- [__how to make a chat bot__](https://youtu.be/nk_rP3Y2_r8?si=Zwg0_1o2tFuRqFkv)
+- [__django tutorial__](https://youtu.be/wQPaXedytlg?si=3dd7blmH-0zNCK47)
+- [__create a chatbot with django__](https://youtu.be/qrZGfBBlXpk?si=67VII9ZNmF8Z31Ka)
+- [__introduction to Ollama__](https://youtu.be/UtSSMs6ObqY?si=O0kBhMSX0nOdfwsk)
