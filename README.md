@@ -42,3 +42,4 @@ I'm going to use html and css for the frontend and django for the backend.
 - [__django tutorial__](https://youtu.be/wQPaXedytlg?si=3dd7blmH-0zNCK47)
 - [__create a chatbot with django__](https://youtu.be/qrZGfBBlXpk?si=67VII9ZNmF8Z31Ka)
 - [__introduction to Ollama__](https://youtu.be/UtSSMs6ObqY?si=O0kBhMSX0nOdfwsk)
+- [__fine tuning for ollama__](https://youtu.be/pTaSDVz0gok?si=wyoKoZpPNm4xiM4O)
