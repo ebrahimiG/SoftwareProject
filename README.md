@@ -19,9 +19,10 @@ I'm going to use html and css for the frontend and django for the backend.
    - ✅ use the prototype for designing  
 
 🛠️ __4. development__ : 
-   - ✅coding
+   - ✅ coding
    - ✅ frontend
-   - 📍 backend
+   - ✅ backend
+   - 📍 working on the model
    - testing
 
 💾 __5. implement__ : 
