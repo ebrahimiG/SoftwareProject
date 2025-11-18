@@ -16,7 +16,7 @@
     top : 5px;
     height: 70px;
     background-color: var(--background-main);
-    opacity: 0.9;
+    /* opacity: 0.9; */
     z-index: 10;
     margin: 0 10px;
 }
