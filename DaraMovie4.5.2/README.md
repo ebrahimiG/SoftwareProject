@@ -1,2 +1,1 @@
-DaraMovie with JS file... <br>
-make sure you have ollama and django installed on env.
+trying to make daramovie with a js file...

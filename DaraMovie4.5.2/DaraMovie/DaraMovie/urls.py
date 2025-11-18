@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('main.urls')),
     path('filmyar',include('filmyar.urls')),
+    path('movies',include('movies.urls')),
 ]   
