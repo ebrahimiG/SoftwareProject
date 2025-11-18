@@ -1,0 +1,39 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}About Us{% endblock title %}</title>
+</head>
+<body>
+    <!-- navbar -->
+
+    {% block content %}
+
+    <div class="container">
+        <h1 style="margin-top: 70px;"><span class="yellow-letter">A</span>bout Us</h1>
+    </div>
+    <br>
+    <hr>
+
+    <div class="container">
+        <p>
+        At <span class="yellow-letter">D</span>araMovie, we believe storytelling is a powerful force that connects people across cultures and generations. Our mission is to celebrate cinema in all its forms—whether you're a fan of indie gems, global blockbusters, or hidden classics. We curate, review, and explore films with passion and purpose, creating a space where movie lovers can discover, discuss, and dive deeper into the world of film 
+    </p>
+    <p>
+        Founded by creatives who live and breathe cinema, <span class="yellow-letter">D</span>araMovie is more than just a platform—it's a growing community. We blend insightful content with a clean, user-friendly experience, and we're constantly evolving to bring you fresh perspectives, tools, and features that make your movie journey more meaningful.
+    </p>
+    <p>
+        Here is our <a href="https://github.com/ebrahimiG/SoftwareProject" target="_blank"><i class="fab fa-github"></i> <span class="yellow-letter">G</span>ithub</a> if you want to check
+    </p>
+    </div>
+    
+    {% endblock content %}
+
+    <!-- footer -->
+</body>
+</html>
