@@ -6,4 +6,4 @@ from .models import Movie
 def movie_view(request):
     movies = Movie.objects.all()
     context = {'movies':movies}
-    return render(request,'movies/movie_list.html',context)
+    return render(request, 'movies/movie_list.html' ,context)
