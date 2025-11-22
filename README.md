@@ -36,7 +36,6 @@ I'm going to use html and css for the frontend and django for the backend.
 
 
 ## Resources
-
 - [__using github pages__](https://youtu.be/p1QU3kLFPdg?si=DvzfZDYHBBaC8Ra9)
 - [__responsive website__](https://youtu.be/p0bGHP-PXD4?si=TNr0rckQQAAF28vh)
 - [__how to make a chat bot__](https://youtu.be/nk_rP3Y2_r8?si=Zwg0_1o2tFuRqFkv)
