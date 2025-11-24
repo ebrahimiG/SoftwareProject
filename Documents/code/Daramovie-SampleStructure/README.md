@@ -30,4 +30,7 @@ The goal is to __prompt engineering__ the filmya.
 ## DaraMovie 4.5.4
 trying to make an authentication system so every users has their own chat history.
 
+## change of plans: DaraMovie 4.6.1: 
+better foundation from the beginning...
+
 
