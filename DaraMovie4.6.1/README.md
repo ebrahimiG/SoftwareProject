@@ -1,6 +1,7 @@
 # DaraMovie 4.6.1
 imporvment in the structure of the project <br>
 adding __featured section__ class so the movies can be in different sections like top ten, batman collection or ...
+install django, pillow and ollama
 
 ## step 1: 
 create the movie model and some object from it. around 20 is good.
