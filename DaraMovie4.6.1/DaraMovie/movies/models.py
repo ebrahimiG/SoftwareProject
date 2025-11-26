@@ -37,7 +37,7 @@ class Movie(models.Model):
     title = models.CharField(max_length=100)
     director = models.ManyToManyField(People,limit_choices_to={'role':'Director'},related_name='directed_movies')
     actors = models.ManyToManyField(People,limit_choices_to={'role':'Actor'},related_name='acted_movies',blank=True)
-    poster = models.ImageField(upload_to='static/posters')
+    poster = models.ImageField(upload_to='posters/')
     summary = models.TextField()
     rate = models.DecimalField(max_digits=3, decimal_places=1)
     release_date = models.DateField()
@@ -100,7 +100,7 @@ class Movie(models.Model):
 # it uses Movie class to gather movies in a collection.
 class SectionTag(models.Model):
     section_name = models.CharField(max_length=70)
-    movies = models.ManyToManyField(Movie)
+    movies = models.ManyToManyField(Movie,blank=True)
     slug = models.SlugField(unique=True,blank=True)
     order = models.PositiveIntegerField(default=0)
     description = models.TextField(blank=True)
