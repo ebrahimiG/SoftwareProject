@@ -19,6 +19,9 @@
     /* opacity: 0.9; */
     z-index: 10;
     margin: 0 10px;
+    /* border: solid 1px var(--yellow-color); */
+    border-radius: 10px;
+
 }
 .navbar ul{
     display: flex;
