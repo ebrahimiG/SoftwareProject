@@ -1,0 +1,148 @@
+.container{
+    max-width: 1100px;
+    /* background-color: red; */
+    height: 100%;
+    margin: auto;
+    padding: 0 10px;
+}
+.container-L{
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gird{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-3{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.info-card{
+    background-color: blue;
+    padding: 10px;
+}
+
+/* showcase top10-sec*/
+.sec{
+    height: 500px;
+    /* background-color: var(--background-main); */
+    /* border: solid 1px var(--yellow-color); */
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px black;
+}
+
+.grid-ver{
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    gap: 10px;
+}
+
+.title-sec{
+    /* padding: 5px 0; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.footer-sec{
+    padding: 10px;
+    margin-bottom:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-self: flex-end; */
+}
+.poster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    height: 250px;
+    width: 180px;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.15s ease;
+}
+.poster img{
+    height: 100%;
+    width: 100%;
+}
+.poster a{
+    padding:0;
+}
+.poster:hover{
+    transform: translateY(-3px);
+}
+.poster:active{
+    border: 1px solid rgb(78, 78, 78);
+}
+
+.poster-link{
+    position: relative;
+}
+.poster-overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.poster-link:hover .poster-overlay{
+    opacity: 1;
+}
+
+
+/* margin */
+.mar{
+    margin: 70px 10px;
+}
+.mar-2{
+    margin: 70px 20px;
+}
+/* botton */
+.btn{
+    background-color: var(--yellow-color);
+    color: black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-weight: 500;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.btn:hover{
+    background-color: rgba(221,221,16,0.9);
+}
+.btn:active{
+    box-shadow: none;
+    background-color:rgba(221,221,16,0.8) ;
+}
+/* we don't want the underline for the link */
+.btn:hover::after{
+    transform: scaleX(0);   
+}
+
+.lead{
+    font-size: 18px;
+}
