@@ -22,11 +22,12 @@ def home_view(request):
 ```
 
 ## step 2: 
-go for filmyar and make sure it's working. everythig is working so far
+go for filmyar and make sure it's working. everythig is working so far.
 
 ## step 3: 
 go for the movies app and create __movies_all.html__, __movie_detail.html__, __genre_index.html__ and __genre_page.html__.
 create some genres and work with them.
+movies_all.html ✅
 
 
 
