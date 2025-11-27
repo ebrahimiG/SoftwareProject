@@ -6,11 +6,11 @@ I'm going to use html and css for the frontend and django for the backend.
 🌐 When it's complete, I'll post the website address here : 
 
 ## The Process 
-🗣️ __1. communication__: 
+🗣️ __1. communication__ : 
    - ✅ what is the project about?
    - ✅ research
 
-🖌️ __2. modeling__:
+🖌️ __2. modeling__ :
    - ✅ sketch 
    - ✅ wirefram 
    - ✅ prototype 
