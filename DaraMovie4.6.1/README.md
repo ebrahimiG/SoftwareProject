@@ -5,7 +5,21 @@ adding __featured section__ class so the movies can be in different sections lik
 ## step 1: 
 create the movie model and some object from it. around 20 is good. --> i made 11
 then try to show those movies with the __FeaturedSection__ class in the home page.
-i showed the movies in home page using 
+i showed the movies in home page using this in views.py : 
+```
+# home page
+def home_view(request):
+    # select four movies from database (usually starts from the oldest movie object)
+    topten_sec = Movie.objects.all()[:4]
+    # select the four movie that recently created ('-id')
+    blog_sec = Movie.objects.order_by('-id')[:4]
+
+    context = {
+        'topten':topten_sec,
+        'blog':blog_sec
+    }
+    return render(request,'main/home.html',context)
+```
 
 ## step 2: 
 go for filmyar and make sure it's working.
