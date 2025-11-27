@@ -1,4 +1,6 @@
 {% extends "movies/base.html" %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +9,157 @@
     <title>{% block title %}movie detail{% endblock title %}</title>
 </head>
 <body>
+    
+
     {% block content %}
-    <h1>This is movie detail sample</h1>
-    {% endblock content %}
+<main class="movie-detail">
+
+    <!-- Movie header: title, year, rating -->
+    <header class="movie-header">
+        <h1 class="movie-title">
+            {{ movie.title }}
+        </h1>
+
+        {% if movie.release_date %}
+            <p class="movie-meta">
+                <span class="movie-year">
+                    {{ movie.release_date|date:"Y" }}
+                </span>
+                {% if movie.country %}
+                    · <span class="movie-country">{{ movie.country }}</span>
+                {% endif %}
+                {% if movie.platform %}
+                    · <span class="movie-platform">{{ movie.platform }}</span>
+                {% endif %}
+            </p>
+        {% endif %}
+
+        {% if movie.rate %}
+            <p class="movie-rating">
+                <strong>Rating:</strong> {{ movie.rate }} / 10
+            </p>
+        {% endif %}
+    </header>
+
+    <!-- Layout: poster + main info -->
+    <section class="movie-main">
+        <div class="movie-poster">
+            {% if movie.poster %}
+                <img src="{{ movie.poster.url }}" alt="Poster for {{ movie.title }}">
+            {% else %}
+                <div class="poster-placeholder">
+                    No poster available
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="movie-info">
+
+            <!-- Basic info -->
+            <div class="movie-info-block">
+                {% if movie.director %}
+                    <p>
+                        <strong>Director:</strong> {{ movie.director }}
+                    </p>
+                {% endif %}
+
+                {% if movie.release_date %}
+                    <p>
+                        <strong>Release date:</strong> {{ movie.release_date|date:"F j, Y" }}
+                    </p>
+                {% endif %}
+
+                {% if movie.country %}
+                    <p>
+                        <strong>Country:</strong> {{ movie.country }}
+                    </p>
+                {% endif %}
+
+                {% if movie.platform %}
+                    <p>
+                        <strong>Platform:</strong> {{ movie.platform }}
+                    </p>
+                {% endif %}
+
+                {% if movie.genres.all %}
+                    <p>
+                        <strong>Genres:</strong>
+                        {% for genre in movie.genres.all %}
+                            {{ genre.name }}{% if not forloop.last %}, {% endif %}
+                        {% empty %}
+                            No genres specified
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+
+            <!-- Actors -->
+            <div class="movie-info-block">
+                <h2>Cast</h2>
+                {% if movie.actors.all %}
+                    <ul class="actor-list">
+                        {% for actor in movie.actors.all %}
+                            <li>{{ actor.name }}</li>
+                        {% empty %}
+                            <li>No actors specified.</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No actors specified.</p>
+                {% endif %}
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Summary -->
+    <section class="movie-summary">
+        <h2>Summary</h2>
+        {% if movie.summary %}
+            <p>{{ movie.summary }}</p>
+        {% else %}
+            <p>No summary available for this movie.</p>
+        {% endif %}
+    </section>
+
+    <!-- Similar movies -->
+    <section class="similar-movies">
+        <h2>Similar movies</h2>
+
+        {% if similar_movies %}
+            <ul class="similar-movie-list">
+                {% for similar in similar_movies %}
+                    <li class="similar-movie-item">
+                        <a href="{% url 'movie_detail' similar.slug %}">
+                            {% if similar.poster %}
+                                <img src="{{ similar.poster.url }}"
+                                     alt="Poster for {{ similar.title }}"
+                                     class="similar-movie-poster">
+                            {% endif %}
+                            <div class="similar-movie-info">
+                                <span class="similar-movie-title">{{ similar.title }}</span>
+                                {% if similar.release_date %}
+                                    <span class="similar-movie-year">
+                                        ({{ similar.release_date|date:"Y" }})
+                                    </span>
+                                {% endif %}
+                                {% if similar.rate %}
+                                    <span class="similar-movie-rate">
+                                        · {{ similar.rate }}/10
+                                    </span>
+                                {% endif %}
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No similar movies found.</p>
+        {% endif %}
+    </section>
+
+</main>
+{% endblock %}
 </body>
 </html>
+

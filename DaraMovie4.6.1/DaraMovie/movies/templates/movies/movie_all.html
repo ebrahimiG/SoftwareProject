@@ -44,6 +44,7 @@
                     <th>Summary</th>
                     <th>Rate</th>
                     <th>Similar Movies</th>
+                    <th>Slug</th>
                 </tr>
             </thead>
             <tbody>
@@ -90,6 +91,7 @@
                             {{ similar.title }}{% if not forloop.last %}, {% endif %}
                         {% endfor %}
                     </td>
+                    <td>{{ movie.slug }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
