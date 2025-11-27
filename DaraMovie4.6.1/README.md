@@ -1,4 +1,5 @@
 # DaraMovie 4.6.1
+first of all make sure to install django, pillow and ollama in venv
 imporvment in the structure of the project <br>
 adding __featured section__ class so the movies can be in different sections like top ten, batman collection or ...
 
