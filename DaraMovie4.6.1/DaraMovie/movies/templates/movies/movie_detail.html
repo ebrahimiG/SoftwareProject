@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}movie detail{% endblock title %}</title>
+    <title>{% block title %}{{movie.title}}{% endblock title %}</title>
 </head>
 <body>
     
@@ -26,10 +26,18 @@
                     {{ movie.release_date|date:"Y" }}
                 </span>
                 {% if movie.country %}
-                    · <span class="movie-country">{{ movie.country }}</span>
+                    · <span class="movie-country">
+                        {% for countries in movie.country.all %}
+                            {{countries.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </span>
                 {% endif %}
                 {% if movie.platform %}
-                    · <span class="movie-platform">{{ movie.platform }}</span>
+                    · <span class="movie-platform">
+                        {% for platforms in movie.platform.all %}
+                            {{platforms.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </span>
                 {% endif %}
             </p>
         {% endif %}
@@ -59,7 +67,10 @@
             <div class="movie-info-block">
                 {% if movie.director %}
                     <p>
-                        <strong>Director:</strong> {{ movie.director }}
+                        <strong>Director:</strong> 
+                        {% for directors in movie.director.all %}
+                            {{directors.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
                     </p>
                 {% endif %}
 
@@ -71,13 +82,19 @@
 
                 {% if movie.country %}
                     <p>
-                        <strong>Country:</strong> {{ movie.country }}
+                        <strong>Country:</strong> 
+                        {% for countries in movie.country.all %}
+                            {{countries.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
                     </p>
                 {% endif %}
 
                 {% if movie.platform %}
                     <p>
-                        <strong>Platform:</strong> {{ movie.platform }}
+                        <strong>Platform:</strong>
+                        {% for platforms in movie.platform.all %}
+                            {{platforms.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
                     </p>
                 {% endif %}
 
@@ -126,9 +143,9 @@
     <section class="similar-movies">
         <h2>Similar movies</h2>
 
-        {% if similar_movies %}
+        {% if movie.similar_movies.all %}
             <ul class="similar-movie-list">
-                {% for similar in similar_movies %}
+                {% for similar in movie.similar_movies.all %}
                     <li class="similar-movie-item">
                         <a href="{% url 'movie_detail' similar.slug %}">
                             {% if similar.poster %}
