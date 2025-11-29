@@ -3,7 +3,7 @@ This is a movie and series review and recommendation website that also uses 🤖
 this repo is about building and reporting the process. you can take a look at the Documetns. 
 I'm going to use html and css for the frontend and django for the backend.
 
-🌐 When it's complete, I'll post the website address here. 
+<!-- 🌐 When it's complete, I'll post the website address here. -->
 
 ## The Process 
 🗣️ __1. communication__ : 
@@ -25,14 +25,14 @@ I'm going to use html and css for the frontend and django for the backend.
    - 📍 working on the models
    - testing
 
-💾 __5. implement__ : 
-   - put the website online
+<!--💾 __5. implement__ : 
+   - put the website online -->
 
-## Features
+<!-- ## Features
 - 🎯 Personalized movie recommendations
 - 🔍 Advanced search and filtering
 - 🧠 AI integration for smart suggestions
-- 📱 Responsive design for mobile and desktop
+- 📱 Responsive design for mobile and desktop -->
 
 
 ## Resources
