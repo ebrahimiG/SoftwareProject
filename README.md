@@ -1,6 +1,6 @@
 # DaraMovie Project (Archive) 🎞️
 This is a movie and series review and recommendation website that also uses 🤖 __artificial intelligence__ to provide users with a better experience.
-this repo is about building and reporting the process. you can take a look at the Documetns. 
+this repo is about building and reporting the process. you can take a look at the [Documents](https://github.com/ebrahimiG/SoftwareProject/tree/main/Documents). 
 I'm going to use html and css for the frontend and django for the backend.
 
 <!-- 🌐 When it's complete, I'll post the website address here. -->
