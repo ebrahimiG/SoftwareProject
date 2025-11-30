@@ -1,0 +1,46 @@
+{% extends "movies/base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head %}
+    <link rel="stylesheet" href="{% static "styles/genre_detail.css" %}">
+    {% endblock head %}
+    
+    <title>{% block title %}{{ genre.name }}{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+<main class="genre-detail">
+
+    <h1>{{ genre.name }}</h1>
+
+    <section class="genre-movie-list">
+        <h2>Movies in this genre</h2>
+
+        {% if movies %}
+            <ul>
+                {% for movie in movies %}
+                    <li>
+                        <a href="{% url 'movie_detail' movie.slug %}">
+                            {% if movie.poster %}
+                                <img src="{{ movie.poster.url }}" alt="{{ movie.title }}">
+                            {% endif %}
+                            {{ movie.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No movies found in this genre.</p>
+        {% endif %}
+    </section>
+
+</main>
+{% endblock %}
+</body>
+</html>

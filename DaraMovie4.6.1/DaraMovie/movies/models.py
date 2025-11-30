@@ -3,11 +3,18 @@ from django.utils.text import slugify
 
 # Create your models here.
 
-# Genre class
+# Genre class: adding slug field
 class Genre(models.Model):
     name = models.CharField(max_length=30)
+    slug = models.SlugField(unique=True, blank=True)
+
     def __str__(self):
         return self.name
+    
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
 
 # Country class
 class Country(models.Model):

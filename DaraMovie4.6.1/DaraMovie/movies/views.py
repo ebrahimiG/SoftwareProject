@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Movie
+from .models import Movie, Genre
 # Create your views here.
 
 # a table for showing all movies
@@ -16,3 +16,11 @@ def movie_detail_view(request,slug):
     return render (request,'movies/movie_detail.html',context)
 
 
+# Genre template view: each genre page and its movies in a list: 
+# 1) sending the slug to render the template
+# 2) passing the movies with the same genre to the template
+def genre_detail_view(request,slug):
+    genre = get_object_or_404(Genre,slug = slug)
+    movies = Movie.objects.filter(genre = genre)
+    context = {'genre':genre, 'movies':movies}
+    return render(request,'movies/genre_detail.html',context)
