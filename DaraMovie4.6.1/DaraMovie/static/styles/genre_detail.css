@@ -1,3 +1,10 @@
-img{
-    width: 200px;
+body{
+    background-color: yellow;
+}
+.g-poster{
+    height: 50%;
+    width: 50%;
+}
+.testing{
+    color: yellowgreen;
 }

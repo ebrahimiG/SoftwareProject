@@ -26,12 +26,13 @@
                     <li class=" cat"><a href="{% url "all_movies" %}">Category <i class="fas fa-caret-down"></i></a>
                         <div class="dropdown-content">
                             <ul>
-                                <li><a class="a-underline" href="#">Action</a></li>
-                                <li><a href="#">Drama</a></li>
-                                <li><a href="#">History</a></li>
-                                <li><a href="#">Romance</a></li>
-                                <li><a href="#">Crime</a></li>
-                                <li><a href="#">More</a></li>
+                                <li><a class="a-underline" href="{% url "genre_detail" 'action' %}">Action</a></li>
+                                <li><a href="{% url "genre_detail" 'drama' %}">Drama</a></li>
+                                <li><a href="{% url "genre_detail" 'history' %}">History</a></li>
+                                <li><a href="{% url "genre_detail" 'romance' %}">Romance</a></li>
+                                <li><a href="{% url "genre_detail" 'crime' %}">Crime</a></li>
+                                {% comment %} this one is genre_list.html {% endcomment %}
+                                <li><a href="#">More</a></li> 
                             </ul>
                         </div>
                     </li>
