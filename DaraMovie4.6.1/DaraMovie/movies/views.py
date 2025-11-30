@@ -24,3 +24,10 @@ def genre_detail_view(request,slug):
     movies = Movie.objects.filter(genre = genre)
     context = {'genre':genre, 'movies':movies}
     return render(request,'movies/genre_detail.html',context)
+
+# all genres 
+def genre_list_view(request):
+    all_genres = Genre.objects.all()
+    context = {'genres':all_genres}
+    return render (request,'movies/genre_list.html',context)
+    

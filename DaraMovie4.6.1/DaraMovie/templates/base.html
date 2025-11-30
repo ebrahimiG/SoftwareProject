@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="{% static "styles/utilities.css" %}">
     <link rel="stylesheet" href="{% static "styles/basics.css" %}">
     <link rel="stylesheet" href="{% static "styles/stylesss.css" %}">
+    {% block head %}
+        {% comment %} other css links for other pages {% endcomment %}
+    {% endblock head %}
 
     <title>{% block title %} {% endblock title %}</title>
 </head>
@@ -32,7 +35,7 @@
                                 <li><a href="{% url "genre_detail" 'romance' %}">Romance</a></li>
                                 <li><a href="{% url "genre_detail" 'crime' %}">Crime</a></li>
                                 {% comment %} this one is genre_list.html {% endcomment %}
-                                <li><a href="#">More</a></li> 
+                                <li><a href="{% url "genre_list" %}">More</a></li> 
                             </ul>
                         </div>
                     </li>

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static "styles/genre_list.css" %}">
+{% endblock head %}
+
+{% block title %}List of all Genres{% endblock title %}
+
+{% block content %}
+    <ul>
+    {% for genre in genres %}
+        <li>{{genre.name}}</li>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}
