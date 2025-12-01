@@ -8,10 +8,17 @@
 {% block title %}List of all Genres{% endblock title %}
 
 {% block content %}
-    <ul>
+<div class="container">
+    <h1 class="genreh1"><span class="yellow-letter">G</span>enres</h1>
+</div>
+<div class="container genre-grid">
     {% for genre in genres %}
-        <li>{{genre.name}}</li>
+    <a class="genre-link" href="{% url "genre_detail" genre.slug %}">
+        <div class="genre-card">
+            <span class="genre-title">{{genre.name}}</span>
+        </div>
+    </a>
     {% endfor %}
-    </ul>
+</div>
 
 {% endblock content %}
