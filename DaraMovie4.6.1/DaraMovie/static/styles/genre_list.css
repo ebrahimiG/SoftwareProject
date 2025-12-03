@@ -3,6 +3,7 @@
     grid-template-columns: repeat(5,1fr);
     gap: 20px;
     padding: 40px 0;
+    margin-bottom: 70px;
 }
 
 .genre-card{
