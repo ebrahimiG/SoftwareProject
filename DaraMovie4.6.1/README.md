@@ -34,6 +34,6 @@ trying to make an authentication system so every users has their own chat histor
 movie detail is complete <br> 
 genre detail and genre list are complete too<br> 
 now other pages <br>
-then go for acounts and blogs <br>
+then acounts and blogs <br>
 
 
