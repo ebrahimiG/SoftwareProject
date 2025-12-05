@@ -17,6 +17,7 @@
 
     <div class="container-L">
         <div class="movie-grid">
+        {% if movies %}
         {% for movie in movies %}
         <a href="{% url 'movie_detail' movie.slug %}">
             <div class="movie-card">
@@ -26,7 +27,12 @@
                 <p>{{ movie.title }}</p>
             </div>
         </a>
-    {% endfor %}
+        {% endfor %}
+        {% else %}
+        <p style="margin-bottom: 250px;"><span class="yellow-letter">N</span>o movies to show...</p>
+        
+
+        {% endif %}
     </div>
 </div>
 
