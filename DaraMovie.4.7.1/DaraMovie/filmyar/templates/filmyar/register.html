@@ -13,7 +13,38 @@
 <body>
     
     <!-- register box -->
-    <div class="register-box"></div>
+    <div class="register-box">
+        <div class="box-header">
+
+        </div>
+        <div class="box-body">
+            <form method="post">
+            {% csrf_token %}
+
+            <div class="form-input">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-input">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            
+            <div class="form-input">
+                <label for="password1">Password</label>
+                <input type="text" id="password1" name="password1" required>
+            </div>
+            
+            <div class="form-input">
+                <label for="password2">Repeat Password</label>
+                <input type="text" id="password2" name="password2" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        </div>
+        
+    </div>
 
 
 
