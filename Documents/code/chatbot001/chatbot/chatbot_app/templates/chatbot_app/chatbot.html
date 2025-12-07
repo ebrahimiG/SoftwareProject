@@ -76,7 +76,7 @@
     <div class="card-body messages-box">
       
       <ul class="list-unstyled messages-list">
-
+        <!-- show the chat history sent by viwes.py through context -->
         {% for chat in chats %}
           {% if chat.user == request.user %}
 
