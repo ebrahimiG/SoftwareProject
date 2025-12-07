@@ -29,7 +29,18 @@ body{
     color: #eae4e4ba;
 }
 
-
+.login-register{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.login-register a{
+    text-decoration: none;
+    color: #eae4e4;
+}
+.login-register a:hover{
+    color: #eae4e4ba;
+}
 
 
 .chat-container{
