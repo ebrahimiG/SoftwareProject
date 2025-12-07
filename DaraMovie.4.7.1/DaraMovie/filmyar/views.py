@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import ollama
 
-# Create your views here.
+# get message from js file
+# give it to ollama and get the response
+# send the response to js file to show
 def filmyar_view(request):
     # getting the message from script_filmyar.js
     if request.method =="POST":
