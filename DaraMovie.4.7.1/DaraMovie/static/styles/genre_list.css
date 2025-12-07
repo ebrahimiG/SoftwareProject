@@ -1,0 +1,35 @@
+.genre-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding: 40px 0;
+    margin-bottom: 70px;
+}
+
+.genre-card{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #111;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+.genre-card:hover{
+    transform: translateY(-5px);
+}
+
+.genreh1{
+    margin-top: 70px;
+}
+
+.genre-link{
+    padding: 0;
+}
+
+.genre-title{
+    font-size: large;
+}

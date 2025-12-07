@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}List of all movies{% endblock title %}</title>
+    {% block head %}
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #dddd10;
+            text-align: center;
+        }
+        .img-list {
+            max-height: 100%;
+        }
+    </style>
+    {% endblock head %}
+</head>
+<body>
+    {% block content %}
+    <div class="container-L">
+        <div class="container">
+            <h1 style="margin: 70px 0;" ><span class="yellow-letter">M</span>ovie List</h1>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Poster</th>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Actors</th>
+                    <th>Release Date</th>
+                    <th>Country</th>
+                    <th>Platform</th>
+                    <th>Genres</th>
+                    <th>Summary</th>
+                    <th>Rate</th>
+                    <th>Similar Movies</th>
+                    <th>Slug</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for movie in movies %}
+                <tr>
+                    <td>
+                        {% if movie.poster %}
+                            <img class="img-list" src="{{ movie.poster.url }}" alt="{{ movie.title }}">
+                        {% else %}
+                            No poster
+                        {% endif %}
+                    </td>
+                    <td>{{ movie.title }}</td>
+                    <td>
+                        {% for direct in movie.director.all %}
+                            {{direct}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for act in movie.actors.all %}
+                            {{act}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>{{ movie.release_date }}</td>
+                    <td>
+                        {% for countrys in movie.country.all %}
+                            {{ countrys.name }}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for platforms in movie.platform.all %}
+                            {{ platforms.name }}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for genre in movie.genre.all %}
+                            {{ genre.name }}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>{{ movie.summary }}</td>
+                    <td>{{ movie.rate }}</td>
+                    <td>
+                        {% for similar in movie.similar_movies.all %}
+                            {{ similar.title }}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                    <td>{{ movie.slug }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% endblock content %}
+</body>
+</html>

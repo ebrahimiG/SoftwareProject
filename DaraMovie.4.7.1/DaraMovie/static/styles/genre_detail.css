@@ -1,0 +1,38 @@
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* ✅ exactly 5 per row */
+    gap: 20px; /* spacing between cards */
+    padding: 20px 0;
+}
+
+.movie-card {
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    text-align: center;
+    width: 240px;
+    height: 400px;
+    transition: transform 0.2s ease;
+}
+.movie-card:hover{
+    transform: translateY(-5px)
+}
+
+
+.movie-card img {
+    width: 100%;
+    height: 90%;
+    border-radius: 6px;
+}
+hr{
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+.movie-card p{
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+}

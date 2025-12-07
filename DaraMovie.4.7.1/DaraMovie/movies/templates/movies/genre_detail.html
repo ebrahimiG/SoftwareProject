@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'styles/genre_detail.css' %}">
+{% endblock head %}
+
+{% block title %}{{ genre.name }}{% endblock %}
+
+{% block content %}
+<main class="genre-detail">
+
+    <div class="container-L" style="margin-top: 70px;">
+        <h1>{{ genre.name }}</h1>
+        <hr>
+    </div>
+
+    <div class="container-L">
+        <div class="movie-grid">
+        {% if movies %}
+        {% for movie in movies %}
+        <a href="{% url 'movie_detail' movie.slug %}">
+            <div class="movie-card">
+                {% if movie.poster %}
+                    <img class="g-poster" src="{{ movie.poster.url }}" alt="{{ movie.title }}">
+                {% endif %}
+                <p>{{ movie.title }}</p>
+            </div>
+        </a>
+        {% endfor %}
+        {% else %}
+        <p style="margin-bottom: 250px;"><span class="yellow-letter">N</span>o movies to show...</p>
+        
+
+        {% endif %}
+    </div>
+</div>
+
+</main>
+{% endblock %}

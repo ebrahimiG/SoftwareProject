@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    {% comment %} <link rel="stylesheet" href="{% static "styles/utilities.css" %}">
+    <link rel="stylesheet" href="{% static "styles/basics.css" %}">
+    <link rel="stylesheet" href="{% static "styles/stylesss.css" %}">  {% endcomment %}
+
+    <!-- font awesome for icons -->
+     {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> {% endcomment %}
+
+     <title>{% block title %}Daramovie{% endblock title %}</title>
+</head>
+    
+<body>
+    <!-- navbar -->
+     
+    
+    {% block content %}
+    <!-- showcase-top10 -->
+    <section class="top10-sec sec mar-2">
+        <div class="container grid-ver">
+            <!-- title of the seciton -->
+            <div class="title-sec">
+                <h1>
+                    Top <span class="yellow-letter">10</span> This Week <i class="fas fa-fire"></i>
+                </h1>
+            </div>
+            <!-- main of the section -->
+            <div class="main-sec">
+                {% for movie in topten %}
+                <div class="poster">
+                    <a href="{% url 'movie_detail' movie.slug %}" class="poster-link">
+                        <img src="{{movie.poster.url}}" alt="{{movie.title}}">
+                        <div class="poster-overlay">
+                            <h3>{{movie.title}}</h3>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>      
+            <!-- footer of the section -->
+            <div class="footer-sec">
+                <a class="btn" href="#">More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- i need a better poster for filmyar -->
+    <section class="filmyar mar">
+        <div class="container flex">
+            <div class="filmyar-poster">
+                <img src="{% static "images/some_pics/editThis.png" %}" alt="">
+            </div>
+            <div class="filmyar-card grid-ver">
+                <h1><span class="yellow-letter">F</span>ilmyar Is Here To Help You</h1>
+                <p class="lead">
+                    Filmyar is Daramovie's built-in AI that helps you discover, explore, and fall in love with cinema. Smart, stylish, and always in sync with your taste. It's like having a personal film curator at your side.
+                </p>
+                <div class="footer-sec">
+                    <a href="{% url "filmyar" %}" class="btn">Start Talking <i class="fas fa-user-astronaut"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog section -->
+    <section class="blog sec mar-2">
+        <div class="container grid-ver">
+            <!-- title of the seciton -->
+            <div class="title-sec">
+                <h1>
+                    <span class="yellow-letter">B</span>logs <i class="fa fa-clapperboard"></i>
+                </h1>
+            </div>
+            <!-- main of the section -->
+            <div class="main-sec">
+                {% for movie in blog %}
+                <div class="poster">
+                    <a href="{% url 'movie_detail' movie.slug %}" class="poster-link">
+                        <img src="{{movie.poster.url}}" alt="{{movie.title}}">
+                        <div class="poster-overlay">
+                            <h3>{{movie.title}}</h3>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>      
+            <!-- footer of the section -->
+            <div class="footer-sec">
+                <a class="btn" href="#">More</a>
+            </div>
+        </div>
+    </section>
+    {% endblock content %}
+
+
+    <!-- Footer -->
+    
+
+
+
+    
+    
+
+      
+</body>
+</html> 

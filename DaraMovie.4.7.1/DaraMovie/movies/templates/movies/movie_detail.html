@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <link rel="stylesheet" href="{% static "styles/movie_detail.css" %}">
+    {% endblock head %}
+
+    
+    <title>{% block title %}{{movie.title}}{% endblock title %}</title>
+</head>
+<body>
+    
+
+    {% block content %}
+<main class="movie-detail container-L">
+
+    <!-- Movie header: title, year, rating -->
+    <header class="movie-header">
+        <h1 class="movie-title">
+            {{ movie.title }}
+        </h1>
+        {% if movie.country.all %}
+            <p class="movie-meta">
+                <span class="movie-year">
+                    {% for countries in movie.country.all %}
+                            {{countries.name}}{% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                </span>
+                {% if movie.release_date %}
+                    · <span class="movie-country">
+                        {{ movie.release_date|date:"Y" }}
+                    </span>
+                {% endif %}
+                {% if movie.platform %}
+                    · <span class="movie-platform">
+                        {% for platforms in movie.platform.all %}
+                            {{platforms.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </p>
+        {% endif %}
+
+        {% if movie.rate %}
+            <p class="movie-rating">
+                <strong>Rating:</strong> {{ movie.rate }} / 10
+            </p>
+        {% endif %}
+    </header>
+    <hr>
+
+
+    <!-- Layout: poster + main info -->
+    <section class="movie-main">
+
+        <div class="movie-info">
+
+            <!-- Basic info -->
+            <div class="movie-info-block">
+                {% if movie.director %}
+                    <p class="p1">
+                        <strong>Director:</strong> 
+                        {% for directors in movie.director.all %}
+                            {{directors.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </p>
+                {% endif %}
+
+                {% if movie.release_date %}
+                    <p>
+                        <strong>Release Date:</strong> {{ movie.release_date|date:"F j, Y" }}
+                    </p>
+                {% endif %}
+
+                {% if movie.country %}
+                    <p>
+                        <strong>Country:</strong> 
+                        {% for countries in movie.country.all %}
+                            {{countries.name}}{% if not forloop.last %}, {% endif %}
+                        {% endfor %}
+                    </p>
+                {% endif %}
+
+                {% if movie.platform %}
+                    <p>
+                        <strong>Platform:</strong>
+                        {% for platforms in movie.platform.all %}
+                            {{platforms.name}}{% if not forloop.last %}, {% endif %}
+                            {% empty %}
+                            -
+                        {% endfor %}
+                    </p>
+                {% endif %}
+
+                {% if movie.genre.all %}
+                    <p>
+                        <strong>Genres:</strong>
+                        {% for genre in movie.genre.all %}
+                            {{ genre.name }}{% if not forloop.last %}, {% endif %}
+                        {% empty %}
+                            No genres specified
+                        {% endfor %}
+                    </p>
+                {% endif %}
+            </div>
+
+            <!-- Actors -->
+            <div class="movie-info-block">
+                <h2><strong>Cast:</strong></h2>
+                {% if movie.actors.all %}
+                    <ul class="actor-list">
+                        {% for actor in movie.actors.all %}
+                            <li>{{ actor.name }}</li>
+                        {% empty %}
+                            <li>No actors specified.</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No actors specified.</p>
+                {% endif %}
+            </div>
+
+        </div>
+
+        <!-- poster here -->
+        <div class="movie-poster">
+            {% if movie.poster %}
+                <img src="{{ movie.poster.url }}" alt="Poster for {{ movie.title }}">
+            {% else %}
+                <div class="poster-placeholder">
+                    No poster available
+                </div>
+            {% endif %}
+        </div>
+    </section>
+    <hr class="hr2">
+    <!-- Summary -->
+    <section class="movie-summary">
+        <h2><strong>Summary</strong></h2>
+        {% if movie.summary %}
+            <p>{{ movie.summary }}</p>
+        {% else %}
+            <p>No summary available for this movie.</p>
+        {% endif %}
+    </section>
+
+    <!-- Similar movies -->
+    <section class="similar-movies">
+        <h2 class="similar-movies-header"><strong>Similar Movies</strong></h2>
+
+        {% if movie.similar_movies.all %}
+        <div class="similar-movies-show">
+
+            {% for similar in movie.similar_movies.all %}
+            <a href="{% url 'movie_detail' similar.slug %}">
+            <div class="movie-card">
+                <div class="sm-poster">
+                    <img src="{{similar.poster.url}}" alt="poster for {{similar.title}}">
+                </div>
+                <div class="sm-title">
+                    <span>{{similar.title}}</span>
+                    <span>. ({{ similar.release_date|date:"Y" }})</span>
+                    <span>. {{similar.rate}}/10</span>
+                </div>
+            </div>
+            </a>
+            {% endfor %}
+            
+        </div>
+        {% endif %}
+
+    </section>
+
+</main>
+{% endblock %}
+</body>
+</html>
+

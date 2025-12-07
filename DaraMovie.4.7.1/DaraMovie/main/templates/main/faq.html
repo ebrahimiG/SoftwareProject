@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}FAQ{% endblock title %}</title>
+</head>
+<body>
+    <!-- navbar -->
+
+    {% block content %}
+
+    <div class="container" >
+        <h1 style="margin-top: 70px;"><span class="yellow-letter">F</span>AQ</h1>
+    </div>
+    <br>
+    <hr>
+
+    <div class="container container-mar-bot">
+        <p>
+        <span class="yellow-letter">H</span>ow can i get subscription?
+    </p>
+    <p>
+        you can get your subscription from <a href="{% url "sub" %}">HERE <i class="fa fa-life-ring"></i></a>
+    </p>
+    <p>
+        Here is our <a href="https://github.com/ebrahimiG/SoftwareProject" target="_blank"><i class="fab fa-github"></i> Github</a> if you want to check.
+    </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    {% endblock content %}
+
+    <!-- footer -->
+</body>
+</html>
