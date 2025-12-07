@@ -33,3 +33,14 @@ def filmyar_view(request):
 
     return render (request,'filmyar/filmyar_chat.html')
     
+
+    
+# register
+def register_view(request):
+    return render(request,'filmyar/register.html')
+
+
+
+#login
+def login_view(request):
+    return render(request,'filmyar/login.html')
