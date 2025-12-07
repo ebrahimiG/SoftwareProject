@@ -1,7 +1,9 @@
 .the-container{
-    position: absolute;
-    top: auto;
-    left: auto;
+    max-width: 400px;
+    margin: 50px auto;
+    height: 500px;
+    background-color: brown;
+    display: flex;
 }
 
 .register-box{
@@ -9,16 +11,41 @@
     background-color: bisque;
     flex-direction: column;
     align-items: center;
+    flex: 1;
+
 }
 
 .box-header{
     background-color: lightgreen;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 .box-body{
+    padding-top: 10px;
+    width: 100%;
     background-color: lightcoral;
+    flex: 6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.formm{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 
 .btn-submit{
     background-color: lightblue;
 }
+
