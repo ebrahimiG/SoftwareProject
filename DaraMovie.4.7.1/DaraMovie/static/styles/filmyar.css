@@ -16,6 +16,11 @@ body{
     height: 100vh;
 }
 
+.yellow-letter{
+    color: #DDDD10;
+}
+
+
 .backhome{
     position: absolute;
     top: 30px;
