@@ -1,0 +1,24 @@
+.the-container{
+    position: absolute;
+    top: auto;
+    left: auto;
+}
+
+.register-box{
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-header{
+    background-color: lightgreen;
+}
+
+.box-body{
+    background-color: lightcoral;
+}
+
+.btn-submit{
+    background-color: lightblue;
+}
