@@ -28,6 +28,7 @@ def filmyar_view(request):
     # get the show chat history of the current user from db and put it in context: 
     chats = Chat.objects.filter(user = request.user)
     context = {'chats':chats}
+
     # getting the message from script_filmyar.js
     if request.method =="POST":
         message = request.POST.get('message')
@@ -38,6 +39,7 @@ def filmyar_view(request):
         # storing chat history:
         # first value is from Chat model and second is from html file.
         chat = Chat(user = request.user, message = message, response = response)
+        chat.save()
 
         # giving the response to the script_filmyar.js
         return JsonResponse({'response':response})
