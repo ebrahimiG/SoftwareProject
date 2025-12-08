@@ -9,3 +9,4 @@ admin.site.register(People)
 admin.site.register(Platform)
 admin.site.register(Country)
 admin.site.register(SectionTag)
+
