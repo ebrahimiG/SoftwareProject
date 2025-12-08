@@ -9,13 +9,15 @@
     <title>Filmyar</title>
 </head>
 <body>
+
     {% if user.is_authenticated %}
-    <div class="login-register"><span class="welcome"><span class="yellow-letter">W</span>elcome</span>, {{user.username}} / <a href="{% url "logout" %}">Logout</a></div>
+        <div class="login-register"><span class="welcome"><span class="yellow-letter">W</span>elcome</span>, {{user.username}} / <a href="{% url "logout" %}">Logout</a></div>
     {% else %}
-    <div class="login-register">
-        <a href="{% url "login" %}"><span class="yellow-letter">L</span>ogin /</a><a href="{% url "register" %}"><span class="yellow-letter"> R</span>egister <i class="fa fa-sign-in "></i></a>
-    </div>
+        <div class="login-register">
+            <a href="{% url "login" %}"><span class="yellow-letter">L</span>ogin /</a><a href="{% url "register" %}"><span class="yellow-letter"> R</span>egister <i class="fa fa-sign-in "></i></a>
+        </div>
     {% endif %}
+
     <div class="backhome">
         <a href="{% url "home" %}"><span class="yellow-letter">B</span>ack Home <i class="fas fa-home"></i></a>
     </div>
@@ -27,8 +29,9 @@
         <!-- the chat screen -->
         <div id="chat-box" class="chat-box">
             {% for chat in chats %}
-                {% comment %} for more security {% endcomment %}
+                <!-- more security -->
                 {% if user.chat == request.user %}
+
                 <!-- showing chat history -->
                     <!-- user -->
                     <div class="message bot-message">
@@ -44,11 +47,11 @@
                 {% endif %}
             {% endfor %}
             
-            <!-- bot message -->
+            <!-- bot message
             <div class="message bot-message">
                 <div class="message-header"><strong>--Filmyar--</strong></div>
                 <div class="message-content">Hello how can i help you?</div>
-            </div>
+            </div> -->
 
             
 
