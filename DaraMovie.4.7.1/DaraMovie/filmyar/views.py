@@ -69,7 +69,7 @@ def register_view(request):
                 user.save()
                 # log in the created user: 
                 auth.login(request,user)
-                return redirect('filmyar')
+                return redirect('home')
             # error handling and sending the error to html file: 
             except: 
                 error_message = 'Error creating account!'
@@ -95,7 +95,7 @@ def login_view(request):
         # log in the user
         if user is not None: 
             auth.login(request,user)
-            return redirect('filmyar')
+            return redirect('home')
         else:
             error_message = 'Invalid User!'
             return render (request,'filmyar/login.html',{'error_message':error_message})
