@@ -63,7 +63,11 @@
                     Filmyar is Daramovie's built-in AI that helps you discover, explore, and fall in love with cinema. Smart, stylish, and always in sync with your taste. It's like having a personal film curator at your side.
                 </p>
                 <div class="footer-sec">
+                    {% if user.is_authenticated %}
                     <a href="{% url "filmyar" %}" class="btn">Start Talking <i class="fas fa-user-astronaut"></i></a>
+                    {% else %}
+                    <a href="{% url "login" %}" class="btn">Start Talking <i class="fas fa-user-astronaut"></i></a>
+                    {% endif %}
                 </div>
             </div>
         </div>
