@@ -34,7 +34,7 @@
                                 <li><a href="{% url "genre_detail" 'history' %}">History</a></li>
                                 <li><a href="{% url "genre_detail" 'romance' %}">Romance</a></li>
                                 <li><a href="{% url "genre_detail" 'crime' %}">Crime</a></li>
-                                {% comment %} this one is genre_list.html {% endcomment %}
+                                
                                 <li><a href="{% url "genre_list" %}">More</a></li> 
                             </ul>
                         </div>
@@ -42,6 +42,7 @@
                     <li><a href="#">Search <i class="fas fa-search"></i></a></li>
                     <li><a href="{% url "filmyar" %}">Filmyar <i class="fas fa-user-astronaut"></i></a></li>
                     <li><a href="{% url "register" %}">Sign Up <i class="fas fa-user"></i></a></li>
+                    <li><a href="{% url "login" %}">Login <i class="fas fa-user"></i></a></li>
                 </ul>
             </nav>
         </div>
