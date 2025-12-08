@@ -1,51 +1,62 @@
-.the-container{
+  body {
+    background-color: #252323;
+  }
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid #dddd10;
+  }
+  .card {
     max-width: 400px;
-    margin: 50px auto;
-    height: 500px;
-    background-color: brown;
-    display: flex;
-}
-
-.register-box{
-    display: flex;
-    background-color: bisque;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-
-}
-
-.box-header{
-    background-color: lightgreen;
+  }
+  .card-header {
+    background-color: #1b1a1a;
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .card-body {
+    padding: 30px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type=text], input[type=password] {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-}
-
-.box-body{
-    padding-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  button[type=submit] {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     width: 100%;
-    background-color: lightcoral;
-    flex: 6;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.formm{
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-content: space-between;
-    gap: 20px;
-}
-/* check the chatbot001 css file */
-
-.btn-submit{
-    background-color: lightblue;
-}
-
+  }
+  button[type=submit]:hover {
+    background-color: #0062cc;
+  }
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+  }
