@@ -71,4 +71,17 @@ def register_view(request):
 
 #login
 def login_view(request):
+    if request.method == "POST":
+        # gathering info: 
+        username = request.POST['username']
+        password = request.POST['password']
+
+        # check if the user exists: if the info is valid, it will creat user object other wise it's None.
+        user = auth.authenticate(request, username= username, password= password)
+        # log in the user
+        if user is not None: 
+            auth.login(request,user)
+        else:
+            error_message = 'Invalid User!'
+            return render (request,'filmyar/login.html',{'error_message':error_message})
     return render(request,'filmyar/login.html')
