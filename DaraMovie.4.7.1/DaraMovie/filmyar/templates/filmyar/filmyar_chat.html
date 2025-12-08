@@ -10,7 +10,7 @@
 </head>
 <body>
     {% if user.is_authenticated %}
-    <div class="login-register"><span class="yellow-letter">W</span>elcome, {{user.username}}</div>
+    <div class="login-register"><span class="yellow-letter">W</span>elcome, {{user.username}} / <a href="{% url "logout" %}">Logout</a></div>
     {% else %}
     <div class="login-register">
         <a href="{% url "login" %}"><span class="yellow-letter">L</span>ogin /</a><a href="{% url "register" %}"><span class="yellow-letter"> R</span>egister <i class="fa fa-sign-in "></i></a>
@@ -26,6 +26,22 @@
 
         <!-- the chat screen -->
         <div id="chat-box" class="chat-box">
+            {% for chat in chats %}
+                {% comment %} for more security {% endcomment %}
+                {% if user.chat == request.user %}
+                    <!-- user -->
+                    <div class="message bot-message">
+                        <div class="message-header"><strong>--{{user.username}}--</strong></div>
+                        <div class="message-content">{{chat.message}}</div>
+                    </div>
+                    
+                    <!-- filmyar -->
+                    <div class="message bot-message">
+                        <div class="message-header"><strong>--Filmyar--</strong></div>
+                        <div class="message-content">{{chat.response}}</div>
+                    </div>
+                {% endif %}
+            {% endfor %}
             
             <!-- bot message -->
             <div class="message bot-message">
