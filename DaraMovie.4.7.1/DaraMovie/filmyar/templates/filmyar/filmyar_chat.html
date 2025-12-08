@@ -30,7 +30,7 @@
         <div id="chat-box" class="chat-box">
             {% for chat in chats %}
                 <!-- more security -->
-                {% if user.chat == request.user %}
+                <!-- {% if user.chat == request.user %} -->
 
                 <!-- showing chat history -->
                     <!-- user -->
@@ -44,7 +44,7 @@
                         <div class="message-header"><strong>--Filmyar--</strong></div>
                         <div class="message-content">{{chat.response}}</div>
                     </div>
-                {% endif %}
+                <!-- {% endif %} -->
             {% endfor %}
             
             <!-- bot message
