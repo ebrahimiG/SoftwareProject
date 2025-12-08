@@ -81,6 +81,7 @@ def login_view(request):
         # log in the user
         if user is not None: 
             auth.login(request,user)
+            return redirect('filmyar')
         else:
             error_message = 'Invalid User!'
             return render (request,'filmyar/login.html',{'error_message':error_message})
