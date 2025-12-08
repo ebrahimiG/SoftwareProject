@@ -25,6 +25,8 @@ def ask_ollama(message):
 # send the response to js file to show
 # show chat history using Chat model
 def filmyar_view(request):
+    # get the show chat history of the current user from db and put it in context: 
+    chats = Chat.objects.filter(user = request.user)
     # getting the message from script_filmyar.js
     if request.method =="POST":
         message = request.POST.get('message')
