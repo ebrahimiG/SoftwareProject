@@ -4,6 +4,7 @@ import ollama
 # for creating user we need User:
 from django.contrib.auth.models import User
 from django.contrib import auth
+from .models import Chat
 
 
 
@@ -22,7 +23,7 @@ def ask_ollama(message):
 # get message from js file
 # give it to ollama and get the response
 # send the response to js file to show
-# filmyar and show chat and chat history
+# show chat history using Chat model
 def filmyar_view(request):
     # getting the message from script_filmyar.js
     if request.method =="POST":
@@ -30,6 +31,10 @@ def filmyar_view(request):
     
         # sending message to ollama and take the response:
         response = ask_ollama(message)
+
+        # storing chat history:
+        # first value is from Chat model and second is from html file.
+        chat = Chat(user = request.user, message = message, response = response)
 
         # giving the response to the script_filmyar.js
         return JsonResponse({'response':response})
