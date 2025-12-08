@@ -1,10 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
 import ollama
+# for creating user we need User:
+from django.contrib.auth.models import User
+from django.contrib import auth
 
-# get message from js file
-# give it to ollama and get the response
-# send the response to js file to show
+
 
 # ask ollama
 def ask_ollama(message):
@@ -18,7 +19,9 @@ def ask_ollama(message):
     return response
 
 
-
+# get message from js file
+# give it to ollama and get the response
+# send the response to js file to show
 # filmyar and show chat and chat history
 def filmyar_view(request):
     # getting the message from script_filmyar.js
@@ -37,6 +40,23 @@ def filmyar_view(request):
     
 # register
 def register_view(request):
+    if request.method == "POST":
+        # gathering the info
+        username = request.POST['username']
+        email = request.POST['email']
+        password1 = request.POST['password1']
+        password2 = request.POST['password2']
+
+        # check the passowrds: 
+        if password1 == password2:
+            try: 
+                # creating and saving new user: 
+                user = User.objects.create_user(username=username, email=email, password=password1)
+                user.save()
+                # log in the created user: 
+                auth.login(request,user)
+                return redirect('filmyar')
+
     return render(request,'filmyar/register.html')
 
 
