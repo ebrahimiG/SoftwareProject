@@ -85,7 +85,9 @@ def login_view(request):
         else:
             error_message = 'Invalid User!'
             return render (request,'filmyar/login.html',{'error_message':error_message})
+
     return render(request,'filmyar/login.html')
+
 
 # logout
 def logout_view(request):
