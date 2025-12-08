@@ -40,7 +40,7 @@
                         </div>
                     </li>
                     <li><a href="#">Search <i class="fas fa-search"></i></a></li>
-                    {% if user.is_authenticated %}<li><a href="{% url "filmyar" %}">Filmyar <i class="fas fa-user-astronaut"></i></a></li>{% endif %}
+                    <li><a href="{% url "filmyar" %}">Filmyar <i class="fas fa-user-astronaut"></i></a></li>
                     <li><a href="{% url "register" %}">Sign Up <i class="fas fa-user"></i></a></li>
                     <li><a href="{% url "login" %}">Login <i class="fas fa-user"></i></a></li>
                 </ul>

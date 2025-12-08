@@ -3,7 +3,7 @@ from django.http import JsonResponse
 import ollama
 # for creating user we need User:
 from django.contrib.auth.models import User
-from django.contrib import auth
+from django.contrib import auth 
 from .models import Chat
 
 
@@ -26,7 +26,10 @@ def ask_ollama(message):
 # show chat history using Chat model
 def filmyar_view(request):
     # get the show chat history of the current user from db and put it in context: 
-    chats = Chat.objects.filter(user = request.user)
+    if request.user.is_authenticated:
+        chats = Chat.objects.filter(user = request.user)
+    else:
+        chats = Chat.objects.none()
     context = {'chats':chats}
 
     # getting the message from script_filmyar.js
