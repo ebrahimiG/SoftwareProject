@@ -45,8 +45,7 @@
                         <li>{{user.username}} <i class="fas fa-user"></i></li>
                         <li><a href="{% url "logout" %}">Logout <i class="fas fa-sign-out"></i></a></li>
                     {% else %}
-                        <li><a href="{% url "register" %}">Sign Up <i class="fas fa-user"></i></a></li>
-                        <li><a href="{% url "login" %}">Login <i class="fas fa-user"></i></a></li>
+                        <li><a href="{% url "login" %}">Login <i class="fas fa-sign-in"></i></a></li>
                     {% endif %}
                 </ul>
             </nav>
