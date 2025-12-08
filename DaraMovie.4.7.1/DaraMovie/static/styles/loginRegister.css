@@ -15,7 +15,8 @@
   .card-header {
     background-color: #1b1a1a;
     color: var(--white-color);
-    font-size: 24px;
+    font-size: 22px;
+    padding: 10px 0;
     font-weight: bold;
     text-align: center;
   }
