@@ -9,9 +9,13 @@
     <title>Filmyar</title>
 </head>
 <body>
+    {% if user.is_authenticated %}
+    <div class="login-register"><span class="yellow-letter">W</span>elcome, {{user.username}}</div>
+    {% else %}
     <div class="login-register">
         <a href="{% url "login" %}"><span class="yellow-letter">L</span>ogin /</a><a href="{% url "register" %}"><span class="yellow-letter"> R</span>egister <i class="fa fa-sign-in "></i></a>
     </div>
+    {% endif %}
     <div class="backhome">
         <a href="{% url "home" %}"><span class="yellow-letter">B</span>ack Home <i class="fas fa-home"></i></a>
     </div>
