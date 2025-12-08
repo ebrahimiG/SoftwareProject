@@ -56,6 +56,14 @@ def register_view(request):
                 # log in the created user: 
                 auth.login(request,user)
                 return redirect('filmyar')
+            # error handling and sending the error to html file: 
+            except: 
+                error_message = 'Error creating account!'
+                return render(request,'filmyar/register.html',{'error_message':error_message})
+        # if passwords didn't match: 
+        else: 
+            error_message = 'Passwords do not match! try again please'
+            return render(request,'filmyar/register.html',{'error_message':error_message})
 
     return render(request,'filmyar/register.html')
 
