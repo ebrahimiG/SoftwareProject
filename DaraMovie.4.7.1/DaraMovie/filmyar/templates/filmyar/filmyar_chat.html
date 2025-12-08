@@ -29,12 +29,13 @@
             {% for chat in chats %}
                 {% comment %} for more security {% endcomment %}
                 {% if user.chat == request.user %}
+                <!-- showing chat history -->
                     <!-- user -->
                     <div class="message bot-message">
                         <div class="message-header"><strong>--{{user.username}}--</strong></div>
                         <div class="message-content">{{chat.message}}</div>
                     </div>
-                    
+
                     <!-- filmyar -->
                     <div class="message bot-message">
                         <div class="message-header"><strong>--Filmyar--</strong></div>
