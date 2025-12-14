@@ -22,8 +22,8 @@ I'm going to use html and css for the frontend and django for the backend.
    - ✅ coding
    - ✅ frontend
    - ✅ backend
-   - 📍 working on the models
-   - testing
+   - ✅ working on the models
+   - 📍 testing
 
 <!--💾 __5. implement__ : 
    - put the website online -->
