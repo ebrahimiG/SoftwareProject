@@ -1,0 +1,2252 @@
+[
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Silence of the Lambs</h2><span class='year'>1991</span><span class='genre'>Thriller</span><span class='director'>Jonathan Demme</span></div>",
+    "output": {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "director": "Jonathan Demme"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Parasite</h2><span class='year'>2019</span><span class='genre'>Thriller</span><span class='director'>Bong Joon-ho</span></div>",
+    "output": {
+      "title": "Parasite",
+      "year": "2019",
+      "genre": "Thriller",
+      "director": "Bong Joon-ho"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Pulp Fiction</h2><span class='year'>1994</span><span class='genre'>crime</span><span class='director'>Quentin Tarantino</span></div>",
+    "output": {
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "crime",
+      "director": "Quentin Tarantino"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Parasite</h2><span class='year'>2019</span><span class='genre'>Thriller</span><span class='director'>Bong Joon-ho</span></div>",
+    "output": {
+      "title": "Parasite",
+      "year": "2019",
+      "genre": "Thriller",
+      "director": "Bong Joon-ho"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Joker</h2><span class='year'>2019</span><span class='genre'>Drama</span><span class='director'>Todd Phillips</span></div>",
+    "output": {
+      "title": "Joker",
+      "year": "2019",
+      "genre": "Drama",
+      "director": "Todd Phillips"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Silence of the Lambs</h2><span class='year'>1991</span><span class='genre'>Thriller</span><span class='director'>Jonathan Demme</span></div>",
+    "output": {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "director": "Jonathan Demme"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Joker</h2><span class='year'>2019</span><span class='genre'>Drama</span><span class='director'>Todd Phillips</span></div>",
+    "output": {
+      "title": "Joker",
+      "year": "2019",
+      "genre": "Drama",
+      "director": "Todd Phillips"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Silence of the Lambs</h2><span class='year'>1991</span><span class='genre'>Thriller</span><span class='director'>Jonathan Demme</span></div>",
+    "output": {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "director": "Jonathan Demme"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Pulp Fiction</h2><span class='year'>1994</span><span class='genre'>crime</span><span class='director'>Quentin Tarantino</span></div>",
+    "output": {
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "crime",
+      "director": "Quentin Tarantino"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Schindler's List</h2><span class='year'>1993</span><span class='genre'>Drama</span><span class='director'>Steven Spielberg</span></div>",
+    "output": {
+      "title": "Schindler's List",
+      "year": "1993",
+      "genre": "Drama",
+      "director": "Steven Spielberg"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Joker</h2><span class='year'>2019</span><span class='genre'>Drama</span><span class='director'>Todd Phillips</span></div>",
+    "output": {
+      "title": "Joker",
+      "year": "2019",
+      "genre": "Drama",
+      "director": "Todd Phillips"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Parasite</h2><span class='year'>2019</span><span class='genre'>Thriller</span><span class='director'>Bong Joon-ho</span></div>",
+    "output": {
+      "title": "Parasite",
+      "year": "2019",
+      "genre": "Thriller",
+      "director": "Bong Joon-ho"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Spirited Away</h2><span class='year'>2001</span><span class='genre'>Animation</span><span class='director'>Hayao Miyazaki</span></div>",
+    "output": {
+      "title": "Spirited Away",
+      "year": "2001",
+      "genre": "Animation",
+      "director": "Hayao Miyazaki"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Silence of the Lambs</h2><span class='year'>1991</span><span class='genre'>Thriller</span><span class='director'>Jonathan Demme</span></div>",
+    "output": {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "director": "Jonathan Demme"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Silence of the Lambs</h2><span class='year'>1991</span><span class='genre'>Thriller</span><span class='director'>Jonathan Demme</span></div>",
+    "output": {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "director": "Jonathan Demme"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Joker</h2><span class='year'>2019</span><span class='genre'>Drama</span><span class='director'>Todd Phillips</span></div>",
+    "output": {
+      "title": "Joker",
+      "year": "2019",
+      "genre": "Drama",
+      "director": "Todd Phillips"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Pulp Fiction</h2><span class='year'>1994</span><span class='genre'>crime</span><span class='director'>Quentin Tarantino</span></div>",
+    "output": {
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "crime",
+      "director": "Quentin Tarantino"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Parasite</h2><span class='year'>2019</span><span class='genre'>Thriller</span><span class='director'>Bong Joon-ho</span></div>",
+    "output": {
+      "title": "Parasite",
+      "year": "2019",
+      "genre": "Thriller",
+      "director": "Bong Joon-ho"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Schindler's List</h2><span class='year'>1993</span><span class='genre'>Drama</span><span class='director'>Steven Spielberg</span></div>",
+    "output": {
+      "title": "Schindler's List",
+      "year": "1993",
+      "genre": "Drama",
+      "director": "Steven Spielberg"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Schindler's List</h2><span class='year'>1993</span><span class='genre'>Drama</span><span class='director'>Steven Spielberg</span></div>",
+    "output": {
+      "title": "Schindler's List",
+      "year": "1993",
+      "genre": "Drama",
+      "director": "Steven Spielberg"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Parasite</h2><span class='year'>2019</span><span class='genre'>Thriller</span><span class='director'>Bong Joon-ho</span></div>",
+    "output": {
+      "title": "Parasite",
+      "year": "2019",
+      "genre": "Thriller",
+      "director": "Bong Joon-ho"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Joker</h2><span class='year'>2019</span><span class='genre'>Drama</span><span class='director'>Todd Phillips</span></div>",
+    "output": {
+      "title": "Joker",
+      "year": "2019",
+      "genre": "Drama",
+      "director": "Todd Phillips"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Pulp Fiction</h2><span class='year'>1994</span><span class='genre'>crime</span><span class='director'>Quentin Tarantino</span></div>",
+    "output": {
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "crime",
+      "director": "Quentin Tarantino"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Black Panther</h2><span class='year'>2018</span><span class='genre'>Superhero</span><span class='director'>Ryan Coogler</span></div>",
+    "output": {
+      "title": "Black Panther",
+      "year": "2018",
+      "genre": "Superhero",
+      "director": "Ryan Coogler"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Schindler's List</h2><span class='year'>1993</span><span class='genre'>Drama</span><span class='director'>Steven Spielberg</span></div>",
+    "output": {
+      "title": "Schindler's List",
+      "year": "1993",
+      "genre": "Drama",
+      "director": "Steven Spielberg"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Pulp Fiction</h2><span class='year'>1994</span><span class='genre'>crime</span><span class='director'>Quentin Tarantino</span></div>",
+    "output": {
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "crime",
+      "director": "Quentin Tarantino"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Seven Samurai</h2><span class='year'>1954</span><span class='genre'>Adventure</span><span class='director'>Akira Kurosawa</span></div>",
+    "output": {
+      "title": "Seven Samurai",
+      "year": "1954",
+      "genre": "Adventure",
+      "director": "Akira Kurosawa"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Whiplash</h2><span class='year'>2014</span><span class='genre'>Drama</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "Whiplash",
+      "year": "2014",
+      "genre": "Drama",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Spirited Away</h2><span class='year'>2001</span><span class='genre'>Animation</span><span class='director'>Hayao Miyazaki</span></div>",
+    "output": {
+      "title": "Spirited Away",
+      "year": "2001",
+      "genre": "Animation",
+      "director": "Hayao Miyazaki"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Godfather</h2><span class='year'>1972</span><span class='genre'>Crime</span><span class='director'>Francis Ford Coppola</span></div>",
+    "output": {
+      "title": "The Godfather",
+      "year": "1972",
+      "genre": "Crime",
+      "director": "Francis Ford Coppola"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Spirited Away</h2><span class='year'>2001</span><span class='genre'>Animation</span><span class='director'>Hayao Miyazaki</span></div>",
+    "output": {
+      "title": "Spirited Away",
+      "year": "2001",
+      "genre": "Animation",
+      "director": "Hayao Miyazaki"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Interstellar</h2><span class='year'>2014</span><span class='genre'>Adventure</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Interstellar",
+      "year": "2014",
+      "genre": "Adventure",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Citizen Kane</h2><span class='year'>1941</span><span class='genre'>Drama</span><span class='director'>Orson Welles</span></div>",
+    "output": {
+      "title": "Citizen Kane",
+      "year": "1941",
+      "genre": "Drama",
+      "director": "Orson Welles"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Schindler's List</h2><span class='year'>1993</span><span class='genre'>Drama</span><span class='director'>Steven Spielberg</span></div>",
+    "output": {
+      "title": "Schindler's List",
+      "year": "1993",
+      "genre": "Drama",
+      "director": "Steven Spielberg"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Joker</h2><span class='year'>2019</span><span class='genre'>Drama</span><span class='director'>Todd Phillips</span></div>",
+    "output": {
+      "title": "Joker",
+      "year": "2019",
+      "genre": "Drama",
+      "director": "Todd Phillips"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Silence of the Lambs</h2><span class='year'>1991</span><span class='genre'>Thriller</span><span class='director'>Jonathan Demme</span></div>",
+    "output": {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "director": "Jonathan Demme"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Joker</h2><span class='year'>2019</span><span class='genre'>Drama</span><span class='director'>Todd Phillips</span></div>",
+    "output": {
+      "title": "Joker",
+      "year": "2019",
+      "genre": "Drama",
+      "director": "Todd Phillips"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Schindler's List</h2><span class='year'>1993</span><span class='genre'>Drama</span><span class='director'>Steven Spielberg</span></div>",
+    "output": {
+      "title": "Schindler's List",
+      "year": "1993",
+      "genre": "Drama",
+      "director": "Steven Spielberg"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Parasite</h2><span class='year'>2019</span><span class='genre'>Thriller</span><span class='director'>Bong Joon-ho</span></div>",
+    "output": {
+      "title": "Parasite",
+      "year": "2019",
+      "genre": "Thriller",
+      "director": "Bong Joon-ho"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Lion King</h2><span class='year'>1994</span><span class='genre'>Animation</span><span class='director'>John Lasseter</span></div>",
+    "output": {
+      "title": "The Lion King",
+      "year": "1994",
+      "genre": "Animation",
+      "director": "John Lasseter"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Shawshank Redemption</h2><span class='year'>1994</span><span class='genre'>Drama</span><span class='director'>Frank Darabont</span></div>",
+    "output": {
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "genre": "Drama",
+      "director": "Frank Darabont"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>La La Land</h2><span class='year'>2016</span><span class='genre'>Musical</span><span class='director'>Damien Chazelle</span></div>",
+    "output": {
+      "title": "La La Land",
+      "year": "2016",
+      "genre": "Musical",
+      "director": "Damien Chazelle"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Matrix</h2><span class='year'>1999</span><span class='genre'>Science Fiction</span><span class='director'>Lana & Lili Wachwski</span></div>",
+    "output": {
+      "title": "The Matrix",
+      "year": "1999",
+      "genre": "Science Fiction",
+      "director": "Lana & Lili Wachwski"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Silence of the Lambs</h2><span class='year'>1991</span><span class='genre'>Thriller</span><span class='director'>Jonathan Demme</span></div>",
+    "output": {
+      "title": "The Silence of the Lambs",
+      "year": "1991",
+      "genre": "Thriller",
+      "director": "Jonathan Demme"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Coco</h2><span class='year'>2017</span><span class='genre'>Animation</span><span class='director'>Lee Unkrich</span></div>",
+    "output": {
+      "title": "Coco",
+      "year": "2017",
+      "genre": "Animation",
+      "director": "Lee Unkrich"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Goodfellas</h2><span class='year'>1990</span><span class='genre'>Crime</span><span class='director'>Martin Scoreses</span></div>",
+    "output": {
+      "title": "Goodfellas",
+      "year": "1990",
+      "genre": "Crime",
+      "director": "Martin Scoreses"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Titanic</h2><span class='year'>1997</span><span class='genre'>Romance</span><span class='director'>James Cameron</span></div>",
+    "output": {
+      "title": "Titanic",
+      "year": "1997",
+      "genre": "Romance",
+      "director": "James Cameron"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Pulp Fiction</h2><span class='year'>1994</span><span class='genre'>crime</span><span class='director'>Quentin Tarantino</span></div>",
+    "output": {
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "crime",
+      "director": "Quentin Tarantino"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Parasite</h2><span class='year'>2019</span><span class='genre'>Thriller</span><span class='director'>Bong Joon-ho</span></div>",
+    "output": {
+      "title": "Parasite",
+      "year": "2019",
+      "genre": "Thriller",
+      "director": "Bong Joon-ho"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Fight Club</h2><span class='year'>1999</span><span class='genre'>Drama</span><span class='director'>David Fincher</span></div>",
+    "output": {
+      "title": "Fight Club",
+      "year": "1999",
+      "genre": "Drama",
+      "director": "David Fincher"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>The Dark Knight</h2><span class='year'>2008</span><span class='genre'>Action</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "The Dark Knight",
+      "year": "2008",
+      "genre": "Action",
+      "director": "Christopher Nolan"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>casablanca</h2><span class='year'>1942</span><span class='genre'>Romance</span><span class='director'>Michael Curtiz</span></div>",
+    "output": {
+      "title": "casablanca",
+      "year": "1942",
+      "genre": "Romance",
+      "director": "Michael Curtiz"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Pulp Fiction</h2><span class='year'>1994</span><span class='genre'>crime</span><span class='director'>Quentin Tarantino</span></div>",
+    "output": {
+      "title": "Pulp Fiction",
+      "year": "1994",
+      "genre": "crime",
+      "director": "Quentin Tarantino"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Avengers: Endgame</h2><span class='year'>2019</span><span class='genre'>Superhero</span><span class='director'>Anthony Russo, Joe Russo</span></div>",
+    "output": {
+      "title": "Avengers: Endgame",
+      "year": "2019",
+      "genre": "Superhero",
+      "director": "Anthony Russo, Joe Russo"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Gladiator</h2><span class='year'>2000</span><span class='genre'>Historical Epic</span><span class='director'>Ridley Scott</span></div>",
+    "output": {
+      "title": "Gladiator",
+      "year": "2000",
+      "genre": "Historical Epic",
+      "director": "Ridley Scott"
+    }
+  },
+  {
+    "input": "Extract the movie information:\n<div class='movie'><h2>Inception</h2><span class='year'>2010</span><span class='genre'>Science Fiction</span><span class='director'>Christopher Nolan</span></div>",
+    "output": {
+      "title": "Inception",
+      "year": "2010",
+      "genre": "Science Fiction",
+      "director": "Christopher Nolan"
+    }
+  }
+]
