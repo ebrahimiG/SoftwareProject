@@ -11,7 +11,7 @@ from .models import Chat
 # ask ollama
 def ask_ollama(message):
     client = ollama.Client()
-    model = 'mistral' 
+    model = 'filmiar' 
     prompt = message
 
     Response = client.generate(model=model, prompt=prompt)
