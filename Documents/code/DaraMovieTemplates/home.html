@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static "styles/utilities.css" %}">
+    <link rel="stylesheet" href="{% static "styles/basics.css" %}">
+    <link rel="stylesheet" href="{% static "styles/stylesss.css" %}">
+
+    <!-- font awesome for icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <title>Daramovie</title>
+</head>
+    
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <a  class="logo" href="{% url "home" %}"><h1><i class="fas fa-film"></i> <span class="yellow-letter">D</span>aramovie </h1></a>
+            <nav>
+                <ul>
+                    <li class=" cat"><a href="#">Category <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a class="a-underline" href="#">Action</a></li>
+                                <li><a href="#">Drama</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Romance</a></li>
+                                <li><a href="#">Crime</a></li>
+                                <li><a href="#">More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Search <i class="fas fa-search"></i></a></li>
+                    <li><a href="{% url "filmyar" %}">Filmyar <i class="fas fa-user-astronaut"></i></a></li>
+                    <li><a href="#">Sign In <i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div> 
+    
+
+    <!-- showcase-top10 -->
+    <section class="top10-sec sec mar">
+        <div class="container grid-ver">
+            <!-- title of the seciton -->
+            <div class="title-sec">
+                <h1>
+                    Top <span class="yellow-letter">10</span> This Week <i class="fas fa-fire"></i>
+                </h1>
+            </div>
+            <!-- main of the section -->
+            <div class="main-sec">
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/interstellar.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>Interstellar</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/quiet_place.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>A Quite Place</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/godfather.png" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>The Godfather</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/batman.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>The Batman 2021</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>      
+            <!-- footer of the section -->
+            <div class="footer-sec">
+                <a class="btn" href="#">More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- i need a better poster for filmyar -->
+    <section class="filmyar mar">
+        <div class="container flex">
+            <div class="filmyar-poster">
+                <img src="{% static "images/some_pics/editThis.png" %}" alt="">
+            </div>
+            <div class="filmyar-card grid-ver">
+                <h1><span class="yellow-letter">F</span>ilmyar Is Here To Help You</h1>
+                <p class="lead">
+                    Filmyar is Daramovie's built-in AI that helps you discover, explore, and fall in love with cinema. Smart, stylish, and always in sync with your taste. It's like having a personal film curator at your side.
+                </p>
+                <div class="footer-sec">
+                    <a href="{% url "filmyar" %}" class="btn">Start Talking <i class="fas fa-user-astronaut"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog section -->
+    <section class="blog sec mar">
+        <div class="container grid-ver">
+            <!-- title of the seciton -->
+            <div class="title-sec">
+                <h1>
+                    <span class="yellow-letter">B</span>logs <i class="fa fa-clapperboard"></i>
+                </h1>
+            </div>
+            <!-- main of the section -->
+            <div class="main-sec">
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/blog1.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>Netfelix This Season</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/blog2.jpeg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>A Drama List</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/blog3.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>Making Joker</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="poster">
+                    <a href="#" class="poster-link">
+                        <img src="{% static "images/movie_posters/blog4.jpg" %}" alt="">
+                        <div class="poster-overlay">
+                            <h3>For The Weekend</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>      
+            <!-- footer of the section -->
+            <div class="footer-sec">
+                <a class="btn" href="#">More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="navigation">
+            <div class="aboutus">
+                <a href="#">About Us</a>
+            </div>
+            <div class="contactus">
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="faq">
+                <a href="#">FAQ</a>
+            </div>
+            <div class="shoping">
+                <a href="#">Subscription</a>
+            </div>
+        </div>
+        <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-telegram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fas fa-phone fa-2x"></i></a>
+        </div>
+        
+    </footer>
+
+
+
+    
+    
+
+      
+</body>
+</html> 
