@@ -3,7 +3,9 @@ from django.http import JsonResponse
 import ollama
 # for creating user we need User:
 from django.contrib.auth.models import User
+# for login and logout
 from django.contrib import auth 
+# to show the chat history from db
 from .models import Chat
 
 
