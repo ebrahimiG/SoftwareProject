@@ -23,7 +23,7 @@ I'm going to use html and css for the frontend and django for the backend.
    - ✅ frontend
    - ✅ backend
    - ✅ working on the models
-   - 📍 testing
+   - ✅ testing
 
 <!--💾 __5. implement__ : 
    - put the website online -->
